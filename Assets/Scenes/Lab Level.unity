@@ -18151,7 +18151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyList:
-  - prefab: {fileID: 1692602011947889081, guid: 6c6122d6b865eb64494672eb24c6f946,
+  - prefab: {fileID: 6923035645222436057, guid: 6c2949e37d0f78d48bddfa87fc24105b,
       type: 3}
     type: 0
     goldValue: 50
@@ -18159,7 +18159,7 @@ MonoBehaviour:
       type: 3}
     type: 0
     goldValue: 70
-  - prefab: {fileID: 1692602011947889081, guid: 7c93e8ac4d5b5c54495824256b49d2a4,
+  - prefab: {fileID: 6923035645222436057, guid: a15d39d3961e02a418e14c6d6d0f168f,
       type: 3}
     type: 1
     goldValue: 200
@@ -18167,7 +18167,7 @@ MonoBehaviour:
       type: 3}
     type: 1
     goldValue: 250
-  - prefab: {fileID: 1692602011947889081, guid: 8dfd6e3b2d062aa47b20e59b4c8c4c71,
+  - prefab: {fileID: 6923035645222436057, guid: f6a3cc6aa897e984c9453fc7872e045e,
       type: 3}
     type: 2
     goldValue: 500
