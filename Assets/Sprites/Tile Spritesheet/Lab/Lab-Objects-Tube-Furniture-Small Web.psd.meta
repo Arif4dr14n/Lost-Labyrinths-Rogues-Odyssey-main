@@ -1,0 +1,602 @@
+fileFormatVersion: 2
+guid: 67c8603f9af3c7c4aa35a1484196f95d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lab-Game-Tileset-Pixel-Art-Objects_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 213
+        width: 41
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bc200adc64ba9c429bfc6ca2d78a77b
+      internalID: -1507578755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab-Game-Tileset-Pixel-Art-Objects_1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 213
+        width: 42
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f30ed376822075449ce0ba6b5155315
+      internalID: -1668180147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab-Game-Tileset-Pixel-Art-Objects_2
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 213
+        width: 42
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b31e29648789c4bb9c7ef37b9f8ebd
+      internalID: -2070193301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab-Game-Tileset-Pixel-Art-Objects_3
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 213
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 202e3226ce07c384faf05f68665f075c
+      internalID: -786781061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab-Game-Tileset-Pixel-Art-Objects_4
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 213
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea2479ec29dc304c879efe929dd0967
+      internalID: -1191665790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab-Game-Tileset-Pixel-Art-Objects_5
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 213
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 247741f59afd26a4ea394e5ea1cdf795
+      internalID: -1400035137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab-Game-Tileset-Pixel-Art-Objects_6
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 213
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ab91b39f5bfd7145a66d7e1df5e13e5
+      internalID: 936709321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab-Game-Tileset-Pixel-Art-Objects_10
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 160
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61fd1a3b97184964d8b5afa1c95c2c32
+      internalID: 1478594082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab-Game-Tileset-Pixel-Art-Objects_11
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 160
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93b25ce487a0ae346aaa6d0beb685cc6
+      internalID: -119701267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab-Game-Tileset-Pixel-Art-Objects_12
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 160
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d900fe060b17ee14a936c5ee313c9de5
+      internalID: 1693356528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab-Game-Tileset-Pixel-Art-Objects_13
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 160
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d921edfaac45eb142b01ff1538ea6e5c
+      internalID: 1244898786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab-Game-Tileset-Pixel-Art-Objects_14
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 96
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a9babdf1719b141952f3ba98d0a737
+      internalID: 1219637996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab-Game-Tileset-Pixel-Art-Objects_18
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 96
+        width: 39
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9198499181553d468b8baf513b6a2cd
+      internalID: -1710308366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab-Game-Tileset-Pixel-Art-Objects_19
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 112
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf1400753529d54d89e7081e9dbb9bc
+      internalID: 798120176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab-Game-Tileset-Pixel-Art-Objects_20
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 112
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc79f534791cfb40abe5e4fc003233a
+      internalID: -863946729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab-Game-Tileset-Pixel-Art-Objects_21
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 111
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 179c8e8f1d88ef146a28879ebb768a13
+      internalID: 815635753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab-Game-Tileset-Pixel-Art-Objects_22
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 96
+        width: 39
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdaf33a84470cce48aee288850fd133f
+      internalID: 978887502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab-Game-Tileset-Pixel-Art-Objects_23
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 96
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06f0f90cd7567f64883e399a01ebb541
+      internalID: -1272035923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab-Game-Tileset-Pixel-Art-Objects_24
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 96
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 233a976c74a381143b22a4d5c5fa0431
+      internalID: -1409046578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab-Game-Tileset-Pixel-Art-Objects_25
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 97
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d1f927dbd8cf374fa121a96e0b372a4
+      internalID: 759781998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Lab-Game-Tileset-Pixel-Art-Objects_0: -1507578755
+      Lab-Game-Tileset-Pixel-Art-Objects_1: -1668180147
+      Lab-Game-Tileset-Pixel-Art-Objects_10: 1478594082
+      Lab-Game-Tileset-Pixel-Art-Objects_11: -119701267
+      Lab-Game-Tileset-Pixel-Art-Objects_12: 1693356528
+      Lab-Game-Tileset-Pixel-Art-Objects_13: 1244898786
+      Lab-Game-Tileset-Pixel-Art-Objects_14: 1219637996
+      Lab-Game-Tileset-Pixel-Art-Objects_15: 240127833
+      Lab-Game-Tileset-Pixel-Art-Objects_16: 1644155370
+      Lab-Game-Tileset-Pixel-Art-Objects_17: -1450589034
+      Lab-Game-Tileset-Pixel-Art-Objects_18: -1710308366
+      Lab-Game-Tileset-Pixel-Art-Objects_19: 798120176
+      Lab-Game-Tileset-Pixel-Art-Objects_2: -2070193301
+      Lab-Game-Tileset-Pixel-Art-Objects_20: -863946729
+      Lab-Game-Tileset-Pixel-Art-Objects_21: 815635753
+      Lab-Game-Tileset-Pixel-Art-Objects_22: 978887502
+      Lab-Game-Tileset-Pixel-Art-Objects_23: -1272035923
+      Lab-Game-Tileset-Pixel-Art-Objects_24: -1409046578
+      Lab-Game-Tileset-Pixel-Art-Objects_25: 759781998
+      Lab-Game-Tileset-Pixel-Art-Objects_26: 1227675213
+      Lab-Game-Tileset-Pixel-Art-Objects_27: 79477902
+      Lab-Game-Tileset-Pixel-Art-Objects_28: -1122062913
+      Lab-Game-Tileset-Pixel-Art-Objects_29: 758347219
+      Lab-Game-Tileset-Pixel-Art-Objects_3: -786781061
+      Lab-Game-Tileset-Pixel-Art-Objects_30: 1230057986
+      Lab-Game-Tileset-Pixel-Art-Objects_31: 1368273625
+      Lab-Game-Tileset-Pixel-Art-Objects_32: -1586517173
+      Lab-Game-Tileset-Pixel-Art-Objects_33: 880841290
+      Lab-Game-Tileset-Pixel-Art-Objects_34: -157829504
+      Lab-Game-Tileset-Pixel-Art-Objects_35: 494755101
+      Lab-Game-Tileset-Pixel-Art-Objects_36: -693229188
+      Lab-Game-Tileset-Pixel-Art-Objects_37: 1074177748
+      Lab-Game-Tileset-Pixel-Art-Objects_38: -1053613233
+      Lab-Game-Tileset-Pixel-Art-Objects_39: 84034859
+      Lab-Game-Tileset-Pixel-Art-Objects_4: -1191665790
+      Lab-Game-Tileset-Pixel-Art-Objects_40: 1494811594
+      Lab-Game-Tileset-Pixel-Art-Objects_41: -692159482
+      Lab-Game-Tileset-Pixel-Art-Objects_42: -26488539
+      Lab-Game-Tileset-Pixel-Art-Objects_43: -565517457
+      Lab-Game-Tileset-Pixel-Art-Objects_44: 8673315
+      Lab-Game-Tileset-Pixel-Art-Objects_45: -289852537
+      Lab-Game-Tileset-Pixel-Art-Objects_46: -494355530
+      Lab-Game-Tileset-Pixel-Art-Objects_47: 800006713
+      Lab-Game-Tileset-Pixel-Art-Objects_48: -1450297193
+      Lab-Game-Tileset-Pixel-Art-Objects_49: 670867650
+      Lab-Game-Tileset-Pixel-Art-Objects_5: -1400035137
+      Lab-Game-Tileset-Pixel-Art-Objects_50: -1793693260
+      Lab-Game-Tileset-Pixel-Art-Objects_51: -1984232700
+      Lab-Game-Tileset-Pixel-Art-Objects_52: 276085932
+      Lab-Game-Tileset-Pixel-Art-Objects_53: 760028879
+      Lab-Game-Tileset-Pixel-Art-Objects_6: 936709321
+      Lab-Game-Tileset-Pixel-Art-Objects_7: 1380759815
+      Lab-Game-Tileset-Pixel-Art-Objects_8: 1624319924
+      Lab-Game-Tileset-Pixel-Art-Objects_9: 49222576
+      Lab-Objects-Tube_0: 964155474
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
