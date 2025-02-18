@@ -4,30 +4,30 @@ public class Projectile : MonoBehaviour
 {
     //private AttackDetails attackDetails;
 
-    private float speed;
-    private float travelDistance;
-    private float xStartPos;
+    protected float speed;
+    protected float travelDistance;
+    protected float xStartPos;
 
     [SerializeField]
-    private float gravity;
+    protected float gravity;
     [SerializeField]
-    private float damageRadius;
+    protected float damageRadius;
 
-    private Rigidbody2D rb;
+    protected Rigidbody2D rb;
 
-    private bool isGravityOn;
-    private bool hasHitGround;
+    protected bool isGravityOn;
+    protected bool hasHitGround;
     public float damage = 15f;
     public float knockbackAmount = 3f;
 
     [SerializeField]
-    private LayerMask whatIsGround;
+    protected LayerMask whatIsGround;
     [SerializeField]
-    private LayerMask whatIsPlayer;
+    protected LayerMask whatIsPlayer;
     [SerializeField]
-    private Transform damagePosition;
+    protected Transform damagePosition;
 
-    private void Start()
+    protected virtual void Start()
     {
         rb = GetComponent<Rigidbody2D>();
 
@@ -39,7 +39,7 @@ public class Projectile : MonoBehaviour
         xStartPos = transform.position.x;
     }
 
-    private void Update()
+    protected virtual void Update()
     {
         if (!hasHitGround)
         {
@@ -53,7 +53,7 @@ public class Projectile : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
+    protected virtual void FixedUpdate()
     {
         if (!hasHitGround)
         {
@@ -78,6 +78,7 @@ public class Projectile : MonoBehaviour
                 hasHitGround = true;
                 rb.gravityScale = 0f;
                 rb.velocity = Vector2.zero;
+                Destroy(gameObject);
             }
 
 
