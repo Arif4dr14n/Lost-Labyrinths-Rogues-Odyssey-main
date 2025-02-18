@@ -3,27 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Entity : MonoBehaviour {
-	private Movement Movement { get => movement ?? Core.GetCoreComponent(ref movement); }
+	public Movement Movement { get => movement ?? Core.GetCoreComponent(ref movement); }
 
-	private Movement movement;
+	public Movement movement;
 
 	public FiniteStateMachine stateMachine;
 
 	public D_Entity entityData;
 
-	public Animator anim { get; private set; }
+    public Animator anim { get; private set; }
 	public AnimationToStatemachine atsm { get; private set; }
 	public int lastDamageDirection { get; private set; }
 	public Core Core { get; private set; }
 
 	[SerializeField]
-	private Transform wallCheck;
+	protected Transform wallCheck;
 	[SerializeField]
-	private Transform ledgeCheck;
+	protected Transform ledgeCheck;
 	[SerializeField]
-	private Transform playerCheck;
+	protected Transform playerCheck;
 	[SerializeField]
-	private Transform groundCheck;
+	protected Transform groundCheck;
 
 	private float currentHealth;
 	private float currentStunResistance;
@@ -44,7 +44,15 @@ public class Entity : MonoBehaviour {
 		atsm = GetComponent<AnimationToStatemachine>();
 
 		stateMachine = new FiniteStateMachine();
-	}
+        if (entityData == null)
+        {
+            Debug.LogError("EntityData is null on " + gameObject.name);
+        }
+        else
+        {
+            currentHealth = entityData.maxHealth;
+        }
+    }
 
 	public virtual void Update() {
 		Core.LogicUpdate();
@@ -84,7 +92,8 @@ public class Entity : MonoBehaviour {
 	}
 
 	public virtual void OnDrawGizmos() {
-		if (Core != null) {
+		if (Core != null)
+		{
 			Gizmos.DrawLine(wallCheck.position, wallCheck.position + (Vector3)(Vector2.right * Movement.FacingDirection * entityData.wallCheckDistance));
 			Gizmos.DrawLine(ledgeCheck.position, ledgeCheck.position + (Vector3)(Vector2.down * entityData.ledgeCheckDistance));
 

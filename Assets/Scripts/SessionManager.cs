@@ -6,12 +6,12 @@ using UnityEngine.SceneManagement;
 public class SessionManager : MonoBehaviour
 {
     private static SessionManager instance;
-    private static string[] sceneListOrder = {"Main Menu", "Cave Level", "Lab Level", "Basement Level", "Sewerage Level"};
+    private static string[] sceneListOrder = {"Main Menu", "Cave Level"};
     public static int difficulty = 50;
     public static float playerMaxHealth = 100;
     public static float playerDamageMultiplier = 1;
     public static int goldCarried = 0;
-    public static int amountOfJumps = 1;
+    public static int amountOfJumps = 2;
     public static float speedMultiplier = 1;
     public static float jumpHeightMultiplier = 1; 
     
@@ -69,14 +69,13 @@ public class SessionManager : MonoBehaviour
     {
         
         currentSceneIndex++;
-        int randomIndex = Random.Range(1, sceneListOrder.Length);
         if (currentSceneIndex >= sceneListOrder.Length)
         {
             LoadSceneWithLoadingScreen(sceneListOrder[0]);
         }
         else
         {
-            LoadSceneWithLoadingScreen(sceneListOrder[randomIndex]);
+            LoadSceneWithLoadingScreen(sceneListOrder[currentSceneIndex]);
         }
     }
 

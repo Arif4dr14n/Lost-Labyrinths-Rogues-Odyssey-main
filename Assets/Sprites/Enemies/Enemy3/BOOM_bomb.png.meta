@@ -1,0 +1,320 @@
+fileFormatVersion: 2
+guid: fb2bf93f976c9cf4b882ffc03a822670
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BOOM_bomb_0
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 8
+        width: 33
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5600484, y: 0.5091316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea6b53b708abb04e97a3ad8914ac37c
+      internalID: -1484144520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOM_bomb_2
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 4
+        width: 41
+        height: 39
+      alignment: 9
+      pivot: {x: 0.57594967, y: 0.5072584}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9368177533ff845b483b4696d4db26
+      internalID: 1599180048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOM_bomb_7
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 5
+        width: 38
+        height: 37
+      alignment: 9
+      pivot: {x: 0.5372483, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1bb576be3c221842a2b0430783b19c3
+      internalID: 1496844341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOM_bomb_11
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 19
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b5edbc7dc8eff24399b2487116a7cbd
+      internalID: -2066479213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOM_bomb_12
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 18
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 909e0c5db21600848b9d2b9d16193c7a
+      internalID: -1752701305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOM_bomb_1
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 4
+        width: 42
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5471809, y: 0.47876853}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07871058c971da742a0391eee3e4f6b0
+      internalID: 1544582456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOM_bomb_3
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 2
+        width: 44
+        height: 44
+      alignment: 9
+      pivot: {x: 0.51286733, y: 0.49356622}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 980a2e15a2eb2574eaabaee11505b360
+      internalID: 1621261064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOOM_bomb_4
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 0
+        width: 46
+        height: 46
+      alignment: 9
+      pivot: {x: 0.50615394, y: 0.4938459}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4ea68f31e9a8c947bb642006628edfa
+      internalID: -594092534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BOOM_bomb_0: -1484144520
+      BOOM_bomb_1: 1544582456
+      BOOM_bomb_10: -1083113457
+      BOOM_bomb_11: -2066479213
+      BOOM_bomb_12: -1752701305
+      BOOM_bomb_13: -1857053205
+      BOOM_bomb_14: -64567263
+      BOOM_bomb_15: -1346870730
+      BOOM_bomb_16: 873722607
+      BOOM_bomb_17: 1886004166
+      BOOM_bomb_18: 100180839
+      BOOM_bomb_19: -1768500724
+      BOOM_bomb_2: 1599180048
+      BOOM_bomb_20: -2097846824
+      BOOM_bomb_21: -1360053801
+      BOOM_bomb_22: -1060923565
+      BOOM_bomb_23: -347369392
+      BOOM_bomb_24: 2058038203
+      BOOM_bomb_3: 1621261064
+      BOOM_bomb_4: -594092534
+      BOOM_bomb_5: -739832082
+      BOOM_bomb_6: -1741788973
+      BOOM_bomb_7: 1496844341
+      BOOM_bomb_8: 1179573669
+      BOOM_bomb_9: 25008809
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
