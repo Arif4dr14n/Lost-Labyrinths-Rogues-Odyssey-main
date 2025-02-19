@@ -48,8 +48,28 @@ public class RangedAttackState : AttackState
     {
         base.TriggerAttack();
 
+        Debug.Log("TriggerAttack called!");
+
+        if (stateData.projectile == null)
+        {
+            Debug.LogError("Projectile Prefab is NULL in stateData!");
+            return;
+        }
+
         projectile = GameObject.Instantiate(stateData.projectile, attackPosition.position, attackPosition.rotation);
+        Debug.Log("Projectile Instantiated!");
+
         projectileScript = projectile.GetComponent<Projectile>();
+
+        if (projectileScript == null)
+        {
+            Debug.LogError("Projectile script is missing on the instantiated projectile!");
+            return;
+        }
+
         projectileScript.FireProjectile(stateData.projectileSpeed, stateData.projectileTravelDistance, stateData.projectileDamage);
+        Debug.Log("Projectile Fired!");
     }
+
+
 }

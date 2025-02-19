@@ -13,7 +13,7 @@ public class LevelGenerator : MonoBehaviour
     public Grid spawnGrid;
     public LevelGraphGen levelGraphGen;
     // private List<string> mapLayers = new(){"Decoration", "Background", "Platforms", "Indicator Map", "Foreground Decoration", "Danger Foreground"};
-    private readonly List<string> mapLayers = new(){"Platforms", "Indicator Map", "Decoration", "Background 1", "Background 2", "Foreground Decoration" };
+    private readonly List<string> mapLayers = new(){"Platforms", "Indicator Map", "Decoration"};
     // Offset for spawning rooms
     public Vector2Int spawnOffset = new(0, 0); // Adjust as needed
 
@@ -248,13 +248,16 @@ public class LevelGenerator : MonoBehaviour
                                 exitTilePos = tileSpawnPos;
                             }
                         }
-                        else if (tilemap.name == "Platforms" && tile == null)
+                        else
                         {
-                            mapTilemap.SetTile(tileSpawnPos, mapTile);
-                        }
-                        else if (tile != null)
-                        {
-                            spawnTilemap.SetTile(tileSpawnPos, tile);
+                            if (tilemap.name == "Platforms" && tile == null)
+                            {
+                                mapTilemap.SetTile(tileSpawnPos, mapTile);
+                            }
+                            else if (tile != null)
+                            {
+                                spawnTilemap.SetTile(tileSpawnPos, tile);
+                            }
                         }
                     }    
                 }
@@ -327,13 +330,13 @@ public class LevelGenerator : MonoBehaviour
     private void FillEmptyGrid(Dictionary<Vector2Int, Room> levelGrid, Vector2Int posOffset)
     {
         List<Vector2Int> emptyGridPosList = FindAdjacentEmptyCells(levelGrid);
-
+    
         foreach (var emptyGridPos in emptyGridPosList)
         {
-            for (int y = 0; y < defaultRoomSize.y; y++)
+            for (int y = 0; y < defaultRoomSize.y; y++)                                                                         
             {
                 for (int x = 0; x < defaultRoomSize.x; x++)
-                {
+                {   
                     TileBase tile = defaultTile;
 
                     int xAnchor = emptyGridPos.x * defaultRoomSize.x;
@@ -344,7 +347,7 @@ public class LevelGenerator : MonoBehaviour
                     tileSpawnPos.y = yAnchor + y + posOffset.y;
 
                     defaultTilemap.SetTile(tileSpawnPos, tile);
-                }
+                }    
             }
         }
     }
