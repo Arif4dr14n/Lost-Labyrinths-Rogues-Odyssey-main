@@ -19,6 +19,7 @@ public class E5_IdleState : IdleState
     public override void Enter()
     {
         base.Enter();
+        Debug.Log("Enemy idle state");
     }
 
     public override void Exit()

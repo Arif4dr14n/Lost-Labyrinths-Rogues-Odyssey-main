@@ -11,7 +11,6 @@ public class Enemy5 : Entity
     public E5_LookForPlayerState lookForPlayerState { get; private set; }
     public E5_StunState stunState { get; private set; }
     public E5_DeadState deadState { get; private set; }
-    public E5_ChargeState chargeState { get; private set; }
     public E5_RangedAttackState rangedAttackState { get; private set; }
     public E5_EnemyDashState enemyDashState { get; private set; }
 
@@ -28,8 +27,6 @@ public class Enemy5 : Entity
     private D_StunState stunStateData;
     [SerializeField]
     private D_DeadState deadStateData;
-    [SerializeField]
-    private D_ChargeState chargeStateData;
     [SerializeField]
     private D_RangedAttackState rangedAttackStateData;
     [SerializeField]
@@ -50,7 +47,6 @@ public class Enemy5 : Entity
         lookForPlayerState = new E5_LookForPlayerState(this, stateMachine, "lookForPlayer", lookForPlayerStateData, this);
         stunState = new E5_StunState(this, stateMachine, "stun", stunStateData, this);
         deadState = new E5_DeadState(this, stateMachine, "dead", deadStateData, this);
-        chargeState = new E5_ChargeState(this, stateMachine, "charge", chargeStateData, this);
         rangedAttackState = new E5_RangedAttackState(this, stateMachine, "rangedAttack", rangedAttackPosition, rangedAttackStateData, this);
         enemyDashState = new E5_EnemyDashState(this, stateMachine, "dash", enemyDashStateData, this);
     }

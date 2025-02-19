@@ -18,6 +18,7 @@ public class E5_LookForPlayerState : LookForPlayerState
     public override void Enter()
     {
         base.Enter();
+        Debug.Log("Enemy looking for player");
     }
 
     public override void Exit()
