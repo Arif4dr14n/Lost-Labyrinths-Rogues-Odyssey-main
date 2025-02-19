@@ -33,7 +33,7 @@ public class E5_ChargeState : ChargeState
 
         if (performCloseRangeAction)
         {
-            stateMachine.ChangeState(enemy.meleeAttackState);
+            stateMachine.ChangeState(enemy.enemyDashState);
         }
         else if (!isDetectingLedge)
         {

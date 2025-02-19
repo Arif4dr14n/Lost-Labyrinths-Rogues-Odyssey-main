@@ -6,5 +6,5 @@ using UnityEngine;
 public class D_EnemyDashState : ScriptableObject
 {
     public float dashSpeed = 10f;
-    public float dashDuration = 0.5f;
+    public float dashDistance = 5f;
 }

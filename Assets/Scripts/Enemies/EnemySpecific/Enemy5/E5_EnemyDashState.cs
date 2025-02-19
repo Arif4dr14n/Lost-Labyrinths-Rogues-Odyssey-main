@@ -6,33 +6,18 @@ public class E5_EnemyDashState : EnemyDashState
 {
     private Enemy5 enemy;
 
-    public E5_EnemyDashState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, D_EnemyDashState stateData, Enemy5 enemy)
-        : base(entity, stateMachine, animBoolName, stateData)
+    public E5_EnemyDashState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, D_EnemyDashState stateData, Enemy5 enemy) : base(entity, stateMachine, animBoolName, stateData)
     {
         this.enemy = enemy;
-    }
-
-    public override void Enter()
-    {
-        base.Enter();
-
-        enemy.enemyCollider.enabled = false;
-    }
-
-    public override void Exit()
-    {
-        base.Exit();
-
-        enemy.enemyCollider.enabled = true;
     }
 
     public override void LogicUpdate()
     {
         base.LogicUpdate();
 
-        if (isDashOver)
+        if (IsDashOver())
         {
-            stateMachine.ChangeState(enemy.moveState);
+            stateMachine.ChangeState(enemy.lookForPlayerState);
         }
     }
 }

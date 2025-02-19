@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy5 : Entity
 {
-    public BoxCollider2D BC { get; private set; }
+    public BoxCollider2D enemyCollider { get; private set; }
     public E5_MoveState moveState { get; private set; }
     public E5_IdleState idleState { get; private set; }
     public E5_PlayerDetectedState playerDetectedState { get; private set; }
@@ -44,6 +44,7 @@ public class Enemy5 : Entity
     {
         base.Awake();
         BC = GetComponentInParent<BoxCollider2D>();
+        enemyCollider = GetComponentInParent<BoxCollider2D>();
         moveState = new E5_MoveState(this, stateMachine, "move", moveStateData, this);
         idleState = new E5_IdleState(this, stateMachine, "idle", idleStateData, this);
         playerDetectedState = new E5_PlayerDetectedState(this, stateMachine, "playerDetected", playerDetectedStateData, this);
