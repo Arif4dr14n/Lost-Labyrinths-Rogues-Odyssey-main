@@ -43,7 +43,6 @@ public class Enemy5 : Entity
     public override void Awake()
     {
         base.Awake();
-        BC = GetComponentInParent<BoxCollider2D>();
         enemyCollider = GetComponentInParent<BoxCollider2D>();
         moveState = new E5_MoveState(this, stateMachine, "move", moveStateData, this);
         idleState = new E5_IdleState(this, stateMachine, "idle", idleStateData, this);
