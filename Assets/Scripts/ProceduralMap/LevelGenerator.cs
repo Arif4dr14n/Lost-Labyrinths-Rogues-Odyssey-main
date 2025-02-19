@@ -13,7 +13,7 @@ public class LevelGenerator : MonoBehaviour
     public Grid spawnGrid;
     public LevelGraphGen levelGraphGen;
     // private List<string> mapLayers = new(){"Decoration", "Background", "Platforms", "Indicator Map", "Foreground Decoration", "Danger Foreground"};
-    private readonly List<string> mapLayers = new(){"Platforms", "Indicator Map", "Decoration"};
+    private readonly List<string> mapLayers = new(){"Platforms", "Indicator Map", "Decoration", "Background 1", "Background 2", "Foreground Decoration"};
     // Offset for spawning rooms
     public Vector2Int spawnOffset = new(0, 0); // Adjust as needed
 
