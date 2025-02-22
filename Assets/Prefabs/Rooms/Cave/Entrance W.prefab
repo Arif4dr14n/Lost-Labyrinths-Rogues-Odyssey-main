@@ -4757,7 +4757,7 @@ Transform:
   - {fileID: 6177083534407889697}
   - {fileID: 4141649328879780165}
   - {fileID: 7174550451477579066}
-  - {fileID: 5486913422844609312}
+  - {fileID: 1619862603456106019}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3348070830037192822
@@ -5876,7 +5876,7 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
---- !u!1 &8588463642842618474
+--- !u!1 &9177335045376065262
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5884,38 +5884,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5486913422844609312}
-  - component: {fileID: 1671844616480965979}
-  - component: {fileID: 536308713219117600}
+  - component: {fileID: 1619862603456106019}
+  - component: {fileID: 3056387048629211686}
+  - component: {fileID: 7811159591955524562}
   m_Layer: 0
-  m_Name: BossTrigger
+  m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5486913422844609312
+--- !u!4 &1619862603456106019
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8588463642842618474}
+  m_GameObject: {fileID: 9177335045376065262}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5, y: 9.5, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.5, y: 9.5, z: 0.55418473}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4601019548170718123}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1671844616480965979
+--- !u!61 &3056387048629211686
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8588463642842618474}
+  m_GameObject: {fileID: 9177335045376065262}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -5954,18 +5954,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &536308713219117600
+--- !u!114 &7811159591955524562
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8588463642842618474}
+  m_GameObject: {fileID: 9177335045376065262}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 884cc0785d89a8c4e96fe77c0423c76f, type: 3}
+  m_Script: {fileID: 11500000, guid: 4b62240483188c54382067c994ed28b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TurnBasedCanvas: {fileID: 0}
-  roguelikeHUD: {fileID: 0}
-  playerController: {fileID: 0}
