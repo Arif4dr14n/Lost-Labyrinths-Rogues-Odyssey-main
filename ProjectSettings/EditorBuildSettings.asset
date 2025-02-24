@@ -11,18 +11,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TurnBaseScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
-    path: Assets/Scenes/Lab Level 1.unity
-    guid: 87f083d1b8f36d04a89c380d1eb0bf03
-  - enabled: 0
-    path: Assets/Scenes/Basement Level 1.unity
-    guid: 72260f34ba854814991b32b0f7168fcf
-  - enabled: 0
-    path: Assets/Scenes/Sewerage Level 1.unity
-    guid: 714b138c16a07e34b98028dfa9121ef1
   - enabled: 1
     path: Assets/Scenes/Cave Level.unity
     guid: d182ce9644117634690b5f2fe3075c23
+  - enabled: 1
+    path: Assets/Scenes/Lab Level.unity
+    guid: 12ebbaa62d2e34e478d99e684ed71c57
+  - enabled: 1
+    path: Assets/Scenes/Basement Level.unity
+    guid: d01a4c4d1455df1439198f8a5a0c2963
+  - enabled: 1
+    path: Assets/Scenes/Sewerage Level.unity
+    guid: 91ed679c951827e479b7c8aca303580a
   - enabled: 1
     path: Assets/Scenes/Loading.unity
     guid: 1fefff80e35ded24d955f82934c0dfd4

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class SessionManager : MonoBehaviour
 {
     private static SessionManager instance;
-    private static string[] sceneListOrder = {"Main Menu", "Cave Level"};
+    private static string[] sceneListOrder = {"Main Menu", "TurnBaseScene", "Cave Level", "Basement Level", "Sewerage Level", "Lab Level"};
     public static int difficulty = 50;
     public static float playerMaxHealth = 100;
     public static float playerDamageMultiplier = 1;
@@ -21,6 +21,7 @@ public class SessionManager : MonoBehaviour
 
     public static GameObject currentTreasure;
     public static GameObject currentShop;
+    public static GameObject currentTurnBased;
     public static int loadingProgress = 0;
 
 
@@ -67,7 +68,7 @@ public class SessionManager : MonoBehaviour
 
     public static void LoadNextLevelWithLoadingScreen()
     {
-        
+        int randomIndex = Random.Range(2, sceneListOrder.Length);
         currentSceneIndex++;
         if (currentSceneIndex >= sceneListOrder.Length)
         {
@@ -75,8 +76,13 @@ public class SessionManager : MonoBehaviour
         }
         else
         {
-            LoadSceneWithLoadingScreen(sceneListOrder[currentSceneIndex]);
+            LoadSceneWithLoadingScreen(sceneListOrder[randomIndex]);
         }
+    }
+
+    public static void LoadTurnBasedWithLoadingScreen()
+    {
+        LoadSceneWithLoadingScreen("TurnBaseScene");
     }
 
     public static void LoadMainMenuWithLoadingScreen()

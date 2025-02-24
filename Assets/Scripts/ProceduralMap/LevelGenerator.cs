@@ -26,6 +26,7 @@ public class LevelGenerator : MonoBehaviour
     public TileBase dangerTile;
     public TileBase shopTile;
     public TileBase treasureTile;
+    public TileBase turnbasedTile;
 
     public float enemySpawnCoefficient = 10f;
     public EnemyManager enemyManager;
@@ -48,6 +49,7 @@ public class LevelGenerator : MonoBehaviour
 
     public GameObject treasurePrefab;
     public GameObject shopPrefab;
+    public GameObject turnbasedPrefab;
     private List<Vector3Int> treasurePosList = new();
     private List<Vector3Int> shopPosList = new();
 
@@ -60,6 +62,7 @@ public class LevelGenerator : MonoBehaviour
     private GameObject boss;
     private Vector3Int bossTilePos;
     private Vector3Int exitTilePos;
+    private Vector3Int turnbasedTilePos;
     private bool bossSpawned;
 
     // Start is called before the first frame update
@@ -239,6 +242,10 @@ public class LevelGenerator : MonoBehaviour
                             {
                                 shopPosList.Add(tileSpawnPos);
                             }
+                            else if (tile == turnbasedTile)
+                            {
+                                turnbasedTilePos = tileSpawnPos;
+                            }
                             else if (tile == bossTile)
                             {
                                 bossTilePos = tileSpawnPos;
@@ -271,6 +278,7 @@ public class LevelGenerator : MonoBehaviour
         SpawnShop();
         SpawnEnemies();
         SpawnBoss();
+        SpawnTurnBased();
 
         // tileShadowController.ActivateShadowEffect();       
         
@@ -290,6 +298,11 @@ public class LevelGenerator : MonoBehaviour
         {
             Instantiate(shopPrefab, pos, Quaternion.identity);
         }
+    }
+
+    private void SpawnTurnBased()
+    {
+        Instantiate(turnbasedPrefab, turnbasedTilePos, Quaternion.identity);
     }
 
     public List<Vector2Int> FindAdjacentEmptyCells(Dictionary<Vector2Int, Room> levelGrid)

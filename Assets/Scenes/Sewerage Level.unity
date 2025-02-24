@@ -3524,7 +3524,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &265170436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3642,7 +3642,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &268187330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11552,6 +11552,7 @@ MonoBehaviour:
   dangerTile: {fileID: 11400000, guid: f7ec37f6d95c29444a1e8832e9aecea2, type: 2}
   shopTile: {fileID: 11400000, guid: 6210afb7e95ebb14da310833743e2436, type: 2}
   treasureTile: {fileID: 11400000, guid: e1c5bfeb1bd54d543b20eccb0624df52, type: 2}
+  turnbasedTile: {fileID: 11400000, guid: 97cbce0be3adfe643863bc72afc85cb8, type: 2}
   enemySpawnCoefficient: 16
   enemyManager: {fileID: 1971122131}
   player: {fileID: 225787429}
@@ -11564,6 +11565,8 @@ MonoBehaviour:
   treasurePrefab: {fileID: 2259465861747432388, guid: 9ea7fca0190e0d644a4bc7ed93b5ca14,
     type: 3}
   shopPrefab: {fileID: 2259465861747432388, guid: 93d0262afdc16854abfe9bc3553e413c,
+    type: 3}
+  turnbasedPrefab: {fileID: 2259465861747432388, guid: 7692c03257fead94791f9bafc2f29a66,
     type: 3}
   tileShadowController: {fileID: 801888001}
   bossTile: {fileID: 11400000, guid: 27ab2a5616ec4674680ce8aef20aaa5a, type: 2}
@@ -15991,7 +15994,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1722823310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16788,7 +16791,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1760584186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18019,7 +18022,7 @@ MonoBehaviour:
       type: 3}
     type: 2
     goldValue: 500
-  - prefab: {fileID: 1692602011947889081, guid: 95e2df1b02ec0b04bb4a89aec04e6148,
+  - prefab: {fileID: 6923035645222436057, guid: d3a41555555dc134e9b48ed91662bcaf,
       type: 3}
     type: 2
     goldValue: 550

@@ -11922,6 +11922,7 @@ MonoBehaviour:
   dangerTile: {fileID: 11400000, guid: f7ec37f6d95c29444a1e8832e9aecea2, type: 2}
   shopTile: {fileID: 11400000, guid: 6210afb7e95ebb14da310833743e2436, type: 2}
   treasureTile: {fileID: 11400000, guid: e1c5bfeb1bd54d543b20eccb0624df52, type: 2}
+  turnbasedTile: {fileID: 11400000, guid: 97cbce0be3adfe643863bc72afc85cb8, type: 2}
   enemySpawnCoefficient: 16
   enemyManager: {fileID: 1971122131}
   player: {fileID: 225787429}
@@ -11934,6 +11935,8 @@ MonoBehaviour:
   treasurePrefab: {fileID: 2259465861747432388, guid: 9ea7fca0190e0d644a4bc7ed93b5ca14,
     type: 3}
   shopPrefab: {fileID: 2259465861747432388, guid: 93d0262afdc16854abfe9bc3553e413c,
+    type: 3}
+  turnbasedPrefab: {fileID: 2259465861747432388, guid: 7692c03257fead94791f9bafc2f29a66,
     type: 3}
   tileShadowController: {fileID: 801888001}
   bossTile: {fileID: 11400000, guid: 27ab2a5616ec4674680ce8aef20aaa5a, type: 2}
