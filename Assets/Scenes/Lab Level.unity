@@ -11280,111 +11280,111 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomTemplatesList:
-  - roomPrefab: {fileID: 3290517046020089295, guid: 15d54850ce80c494aa7a199e8c5c4b9c,
+  - roomPrefab: {fileID: 3290517046020089295, guid: bb7869bf3fff4f442b7c432f0543a4ca,
       type: 3}
     roomType: 1
     entrances: 02000000
-  - roomPrefab: {fileID: 3290517046020089295, guid: 7f45eeeb54aa7144191c8e891e40c5d1,
+  - roomPrefab: {fileID: 3290517046020089295, guid: ad150a8764fc6a14ab49c58edecfca70,
       type: 3}
     roomType: 0
     entrances: 0000000002000000
-  - roomPrefab: {fileID: 3290517046020089295, guid: 3184fc8fb9508cf438d3d08809c70a25,
+  - roomPrefab: {fileID: 3290517046020089295, guid: 82a6c632e9b37274d8a090317c19f677,
       type: 3}
     roomType: 0
     entrances: 000000000200000001000000
-  - roomPrefab: {fileID: 3290517046020089295, guid: 70cb1ae4f4347b74c8ee47fa6cbc7902,
+  - roomPrefab: {fileID: 3290517046020089295, guid: 0ccedc62f89884349baed4be9624da5d,
       type: 3}
     roomType: 0
     entrances: 0000000001000000
-  - roomPrefab: {fileID: 3290517046020089295, guid: 8619ba8a46613e94d9b294ec439b6216,
+  - roomPrefab: {fileID: 3290517046020089295, guid: 9ec346f173684fb488e9c87e56ebc82e,
       type: 3}
     roomType: 0
     entrances: 0000000003000000
-  - roomPrefab: {fileID: 3290517046020089295, guid: a1bbd510a82499c4997774328372082b,
+  - roomPrefab: {fileID: 3290517046020089295, guid: 32eee29f3fbc4064fa44e06e77913fa9,
       type: 3}
     roomType: 0
     entrances: 000000000300000002000000
-  - roomPrefab: {fileID: 3290517046020089295, guid: fb7dfff4abcc950429f193abc1eae545,
+  - roomPrefab: {fileID: 3290517046020089295, guid: 68bb081b9059e0a4c906b58fa2f17a34,
       type: 3}
     roomType: 0
     entrances: 000000000300000001000000
-  - roomPrefab: {fileID: 3290517046020089295, guid: e6f449135b486e940b395f0525454636,
+  - roomPrefab: {fileID: 3290517046020089295, guid: 75cb91429eb113243bd80f0fa67386a1,
       type: 3}
     roomType: 0
     entrances: 0100000002000000
-  - roomPrefab: {fileID: 3290517046020089295, guid: 95b8c354c1407404eb503b3851e81c1a,
+  - roomPrefab: {fileID: 3290517046020089295, guid: 681387be94e61d34ca3de2a18a2eb8b7,
       type: 3}
     roomType: 0
     entrances: 0100000003000000
-  - roomPrefab: {fileID: 3290517046020089295, guid: 8726972597262b04f91335c40803acb7,
+  - roomPrefab: {fileID: 3290517046020089295, guid: 04267456828ffed46ac8b7c2331931bc,
       type: 3}
     roomType: 0
     entrances: 0200000003000000
-  - roomPrefab: {fileID: 3290517046020089295, guid: 46518ba486a30f64da02f068e8d3118d,
+  - roomPrefab: {fileID: 3290517046020089295, guid: 1bc0444a3188bbb4f9508fd644779b99,
       type: 3}
     roomType: 0
     entrances: 020000000300000001000000
-  - roomPrefab: {fileID: 3290517046020089295, guid: 1118f170c76254a47a29eb1e3ade15df,
+  - roomPrefab: {fileID: 3290517046020089295, guid: b334a15140ae31f4a9ef718ca0986067,
       type: 3}
     roomType: 0
     entrances: 02000000
-  - roomPrefab: {fileID: 3290517046020089295, guid: e7ae1c583a3797940a596a1e3e03c3d0,
+  - roomPrefab: {fileID: 3290517046020089295, guid: f99b8d067e10366479adaa37e54e35e7,
       type: 3}
     roomType: 0
     entrances: 00000000
-  - roomPrefab: {fileID: 3290517046020089295, guid: 37e2dff6f951d5e4fb88058f3ff2a6d8,
+  - roomPrefab: {fileID: 3290517046020089295, guid: be9d9abf33b4b2c4f8d8f332303eac91,
       type: 3}
     roomType: 0
     entrances: 01000000
-  - roomPrefab: {fileID: 3290517046020089295, guid: 8a927cefc19285144bbf30ac851127ec,
+  - roomPrefab: {fileID: 3290517046020089295, guid: c5028a716965141478dfa7cb1163787b,
       type: 3}
     roomType: 0
     entrances: 03000000
-  - roomPrefab: {fileID: 3290517046020089295, guid: 8a927cefc19285144bbf30ac851127ec,
+  - roomPrefab: {fileID: 3290517046020089295, guid: c5028a716965141478dfa7cb1163787b,
       type: 3}
     roomType: 0
     entrances: 03000000
-  - roomPrefab: {fileID: 3290517046020089295, guid: 52bba883a1cd4ec49b7feef7aa5007f7,
+  - roomPrefab: {fileID: 3290517046020089295, guid: 41d0025d6b3347a4eb45de61603434b3,
       type: 3}
     roomType: 2
     entrances: 02000000
-  - roomPrefab: {fileID: 3290517046020089295, guid: e050b37bee7a2a84dab5e782c6745d01,
+  - roomPrefab: {fileID: 3290517046020089295, guid: 947ffc796dae9e846afe68286b369638,
       type: 3}
     roomType: 2
     entrances: 00000000
-  - roomPrefab: {fileID: 3290517046020089295, guid: 8016e665ed37d314f8e9d6b4167cae10,
+  - roomPrefab: {fileID: 3290517046020089295, guid: 946e0fa55464ffa42a50954a831c8ebb,
       type: 3}
     roomType: 2
     entrances: 01000000
-  - roomPrefab: {fileID: 3290517046020089295, guid: 634b9492761698443afb0af38407444b,
+  - roomPrefab: {fileID: 3290517046020089295, guid: 02bad8e4559d2bb4887229fc76ade4ea,
       type: 3}
     roomType: 2
     entrances: 03000000
-  - roomPrefab: {fileID: 3290517046020089295, guid: 1def7163378d73c4ba5541c19b46ec63,
+  - roomPrefab: {fileID: 3290517046020089295, guid: 617c028044c12e44ab16886e78e044f3,
       type: 3}
     roomType: 0
     entrances: 03000000000000000100000002000000
-  - roomPrefab: {fileID: 3290517046020089295, guid: 1a29fb3fa0fde8049b587f4f91658ea0,
+  - roomPrefab: {fileID: 3290517046020089295, guid: a451ad95ab5a94b41a056c5d32271965,
       type: 3}
     roomType: 3
     entrances: 0000000001000000
-  - roomPrefab: {fileID: 3290517046020089295, guid: b65a2b3177cb0d1489cd99eaf78fc7df,
+  - roomPrefab: {fileID: 3290517046020089295, guid: c101f98a403838a4fbd294a932f6d7d2,
       type: 3}
     roomType: 3
     entrances: 0200000003000000
-  - roomPrefab: {fileID: 3290517046020089295, guid: 40f03e2e1eff28b4b9e0098518d48ac4,
+  - roomPrefab: {fileID: 3290517046020089295, guid: 62d21fc8ff896eb409e02376ef969909,
       type: 3}
     roomType: 4
     entrances: 02000000
-  - roomPrefab: {fileID: 3290517046020089295, guid: 8ca01bf9e77a57e43a9acd4690a4f94f,
+  - roomPrefab: {fileID: 3290517046020089295, guid: 638dbb01624f6a74b92c3136a6606823,
       type: 3}
     roomType: 4
     entrances: 00000000
-  - roomPrefab: {fileID: 3290517046020089295, guid: 302b895c9ce124d4aa85713ed1d1900f,
+  - roomPrefab: {fileID: 3290517046020089295, guid: 64ada82ceaff1c54bb5d908018256d78,
       type: 3}
     roomType: 4
     entrances: 01000000
-  - roomPrefab: {fileID: 3290517046020089295, guid: 9fd1d35e288cf894ba9c94ffe1e5f13d,
+  - roomPrefab: {fileID: 3290517046020089295, guid: 190afad16f4abd74794ac94da7b9831b,
       type: 3}
     roomType: 4
     entrances: 03000000
