@@ -72,7 +72,7 @@ public class SessionManager : MonoBehaviour
         currentSceneIndex++;
         if (currentSceneIndex >= sceneListOrder.Length)
         {
-            LoadSceneWithLoadingScreen(sceneListOrder[0]);
+            LoadSceneWithLoadingScreen(sceneListOrder[1]);
         }
         else
         {
