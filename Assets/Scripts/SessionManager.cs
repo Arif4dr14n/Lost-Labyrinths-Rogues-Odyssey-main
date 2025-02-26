@@ -31,12 +31,14 @@ public class SessionManager : MonoBehaviour
         if (instance == null)
         {
             // If not, set the instance to this object and mark it as persistent
+            Debug.Log("No instance");
             instance = this;
             DontDestroyOnLoad(gameObject);
         }
         else
         {
             // If an instance already exists, destroy this duplicate
+            Debug.Log("Instance Exists");
             Destroy(gameObject);
         }
     }
@@ -87,7 +89,7 @@ public class SessionManager : MonoBehaviour
 
     public static void LoadMainMenuWithLoadingScreen()
     {
-        LoadSceneWithLoadingScreen("Main Menu");
+        LoadSceneWithLoadingScreen(sceneListOrder[0]);
     }
 
     private static void LoadSceneWithLoadingScreen(string sceneName)
@@ -99,7 +101,11 @@ public class SessionManager : MonoBehaviour
 
         // Here you can show any loading progress or animation in your loading screen scene
         // You can use asyncLoad.progress to get the loading progress
-
+        Debug.Log("sceneName: " + sceneName);
+        if (sceneName == null)
+        {
+            Debug.LogError("sceneName is NULL!");
+        }
         // Call a function to proceed to the next scene when the progress is complete
         instance.StartCoroutine(LoadNextScene(sceneName));
     }
