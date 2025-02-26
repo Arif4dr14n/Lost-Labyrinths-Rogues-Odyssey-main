@@ -1,31 +1,29 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour
 {
     public Animator transition;
-
     public float transitionTime = 1f;
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.C))
         {
-            SessionManager.LoadTurnBasedWithLoadingScreen();
+            StartCoroutine(LoadLevelWithTransition());
         }
     }
 
-    //public void LoadTurnBasedWithLoadingScreen()
-    //{
-        //StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
-    //}
+    IEnumerator LoadLevelWithTransition()
+    {
+        // Mainkan animasi transisi
+        transition.SetTrigger("Start");
 
-    //IEnumerator LoadLevel(int LevelIndex)
-    //{
-        //transition.SetTrigger("Start");
-        //yield return new WaitForSeconds(transitionTime);
-        //SceneManager.LoadScene(LevelIndex);
-    //}
+        // Tunggu selama transisi berlangsung
+        yield return new WaitForSeconds(transitionTime);
+
+        // Panggil metode untuk memuat level
+        SessionManager.LoadTurnBasedWithLoadingScreen();
+    }
 }
