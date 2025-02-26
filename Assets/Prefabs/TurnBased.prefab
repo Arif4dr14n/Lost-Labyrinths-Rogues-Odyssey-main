@@ -207,7 +207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5a8afadea22471499f95d512716aa7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  renderer: {fileID: 149118309498183730}
+  treasureRenderer: {fileID: 149118309498183730}
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!1 &4285995577902624012
 GameObject:
