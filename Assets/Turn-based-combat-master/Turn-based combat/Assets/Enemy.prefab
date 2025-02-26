@@ -48,7 +48,7 @@ MonoBehaviour:
   unitName: Cave Enemy
   unitLevel: 10
   damage: 5
-  maxHP: 40
+  maxHP: 30
   currentHP: 30
 --- !u!1 &5492376629917588543
 GameObject:

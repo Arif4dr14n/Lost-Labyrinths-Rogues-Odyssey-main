@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40a17e259ace6da418a8bd1c37a213f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transition: {fileID: 1377479768347036524}
+  transition: {fileID: 1989256678296801834}
   transitionTime: 1
 --- !u!1 &6164062946433530564
 GameObject:
@@ -443,7 +443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.38679248, g: 0, b: 0.2043282, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
