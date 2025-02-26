@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: BGWipe
+  m_Controller: {fileID: 9100000, guid: d6c56dfac68f7fd438052fb5293f6753, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 321de4e0e8735d64287ed3f8c0c6f2f7, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 60195f447ad07304fb1617fe796ee636, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 4659fec56efbfa94997d1536a6bc2df9, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e6638dbeb59e89340a3e5ca0ca91b0c4, type: 2}
