@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class SessionManager : MonoBehaviour
 {
     private static SessionManager instance;
-    private static string[] sceneListOrder = {"Main Menu", "TurnBasedSceneCave", "TurnBasedSceneBasement", "Cave Level", "Basement Level", "Sewerage Level", "Lab Level"};
+    private static string[] sceneListOrder = {"Main Menu", "TurnBasedSceneCave", "TurnBasedSceneBasement", "TurnBasedSceneLab", "TurnBasedSceneSewerage", "Cave Level", "Basement Level", "Sewerage Level", "Lab Level"};
     public static int difficulty = 50;
     public static float playerMaxHealth = 100;
     public static float playerDamageMultiplier = 1;
@@ -82,11 +82,22 @@ public class SessionManager : MonoBehaviour
         }
     }
 
-    public static void LoadTurnBasedWithLoadingScreen()
+    public static void LoadTurnBasedCaveWithLoadingScreen()
     {
         LoadSceneWithLoadingScreen("TurnBasedSceneCave");
     }
-
+    public static void LoadTurnBasedBasementWithLoadingScreen()
+    {
+        LoadSceneWithLoadingScreen("TurnBasedSceneBasement");
+    }
+    public static void LoadTurnBasedLabWithLoadingScreen()
+    {
+        LoadSceneWithLoadingScreen("TurnBasedSceneLab");
+    }
+    public static void LoadTurnBasedSewerageWithLoadingScreen()
+    {
+        LoadSceneWithLoadingScreen("TurnBasedSceneSewerage");
+    }
     public static void LoadMainMenuWithLoadingScreen()
     {
         LoadSceneWithLoadingScreen(sceneListOrder[0]);

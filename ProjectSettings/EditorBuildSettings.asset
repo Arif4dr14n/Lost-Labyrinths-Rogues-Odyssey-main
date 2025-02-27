@@ -12,6 +12,15 @@ EditorBuildSettings:
     path: Assets/Scenes/TurnBasedSceneCave.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/TurnBasedSceneBasement.unity
+    guid: 3f7ee0fd547f70748b8707a5c1a8b5ca
+  - enabled: 1
+    path: Assets/Scenes/TurnBasedSceneLab.unity
+    guid: 498ec6f39c0cd0d4ab54371df2ca32df
+  - enabled: 1
+    path: Assets/Scenes/TurnBasedSceneSewerage.unity
+    guid: 379afb85942bba344852715736959afa
+  - enabled: 1
     path: Assets/Scenes/Cave Level.unity
     guid: d182ce9644117634690b5f2fe3075c23
   - enabled: 1
