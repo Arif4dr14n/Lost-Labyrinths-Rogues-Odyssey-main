@@ -6,8 +6,10 @@ public class AttackState : State {
 
 	private Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
 	private Movement movement;
+    private EnemySenses EnemySenses { get => enemySenses ?? core.GetCoreComponent(ref enemySenses); }
+    private EnemySenses enemySenses;
 
-	protected Transform attackPosition;
+    protected Transform attackPosition;
 
 	protected bool isAnimationFinished;
 	protected bool isPlayerInMinAgroRange;
@@ -19,7 +21,7 @@ public class AttackState : State {
 	public override void DoChecks() {
 		base.DoChecks();
 
-		isPlayerInMinAgroRange = entity.CheckPlayerInMinAgroRange();
+		isPlayerInMinAgroRange = EnemySenses.IsSensorTriggered("M2_Player");
 	}
 
 	public override void Enter() {

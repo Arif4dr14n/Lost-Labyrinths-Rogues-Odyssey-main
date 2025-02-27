@@ -69,17 +69,17 @@ public class Entity : MonoBehaviour {
 		stateMachine.currentState.PhysicsUpdate();
 	}
 
-	public virtual bool CheckPlayerInMinAgroRange() {
-		return Physics2D.Raycast(playerCheck.position, transform.right, entityData.minAgroDistance, entityData.whatIsPlayer);
-	}
+	//public virtual bool CheckPlayerInMinAgroRange() {
+	//	return Physics2D.Raycast(playerCheck.position, transform.right, entityData.minAgroDistance, entityData.whatIsPlayer);
+	//}
 
-	public virtual bool CheckPlayerInMaxAgroRange() {
-		return Physics2D.Raycast(playerCheck.position, transform.right, entityData.maxAgroDistance, entityData.whatIsPlayer);
-	}
+	//public virtual bool CheckPlayerInMaxAgroRange() {
+	//	return Physics2D.Raycast(playerCheck.position, transform.right, entityData.maxAgroDistance, entityData.whatIsPlayer);
+	//}
 
-	public virtual bool CheckPlayerInCloseRangeAction() {
-		return Physics2D.Raycast(playerCheck.position, transform.right, entityData.closeRangeActionDistance, entityData.whatIsPlayer);
-	}
+	//public virtual bool CheckPlayerInCloseRangeAction() {
+	//	return Physics2D.Raycast(playerCheck.position, transform.right, entityData.closeRangeActionDistance, entityData.whatIsPlayer);
+	//}
 
 	public virtual void DamageHop(float velocity) {
 		velocityWorkspace.Set(Movement.RB.velocity.x, velocity);

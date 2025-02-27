@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class IdleState : State {
 	private Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
-	private CollisionSenses CollisionSenses { get => collisionSenses ?? core.GetCoreComponent(ref collisionSenses); }
+	//private CollisionSenses CollisionSenses { get => collisionSenses ?? core.GetCoreComponent(ref collisionSenses); }
 
 	private Movement movement;
-	private CollisionSenses collisionSenses;
+	//private CollisionSenses collisionSenses;
+    private EnemySenses EnemySenses { get => enemySenses ?? core.GetCoreComponent(ref enemySenses); }
 
-	protected D_IdleState stateData;
+    private EnemySenses enemySenses;
+
+    protected D_IdleState stateData;
 
 	protected bool flipAfterIdle;
 	protected bool isIdleTimeOver;
@@ -23,7 +26,7 @@ public class IdleState : State {
 
 	public override void DoChecks() {
 		base.DoChecks();
-		isPlayerInMinAgroRange = entity.CheckPlayerInMinAgroRange();
+		isPlayerInMinAgroRange = EnemySenses.IsSensorTriggered("M2_Player");
 	}
 
 	public override void Enter() {

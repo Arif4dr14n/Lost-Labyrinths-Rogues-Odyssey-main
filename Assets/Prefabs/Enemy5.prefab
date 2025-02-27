@@ -543,6 +543,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a93a5f6b0561f1549a3d3636a2a4bc1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movement: {fileID: 0}
+  entityData: {fileID: 0}
+  wallCheck: {fileID: 0}
+  ledgeCheck: {fileID: 0}
+  playerCheck: {fileID: 0}
+  groundCheck: {fileID: 0}
+  moveStateData: {fileID: 0}
+  idleStateData: {fileID: 0}
+  playerDetectedStateData: {fileID: 0}
+  lookForPlayerStateData: {fileID: 0}
+  stunStateData: {fileID: 0}
+  deadStateData: {fileID: 0}
+  chargeStateData: {fileID: 0}
+  rangedAttackStateData: {fileID: 0}
+  enemyDashStateData: {fileID: 0}
+  meleeAttackPosition: {fileID: 0}
+  rangedAttackPosition: {fileID: 0}
 --- !u!1 &4109640564938728611
 GameObject:
   m_ObjectHideFlags: 0

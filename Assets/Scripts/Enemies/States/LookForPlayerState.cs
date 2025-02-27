@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class LookForPlayerState : State {
 	private Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
-	private CollisionSenses CollisionSenses { get => collisionSenses ?? core.GetCoreComponent(ref collisionSenses); }
+	//private CollisionSenses CollisionSenses { get => collisionSenses ?? core.GetCoreComponent(ref collisionSenses); }
+    private EnemySenses	EnemySenses { get => enemySenses ?? core.GetCoreComponent(ref enemySenses); }
 
-	private Movement movement;
-	private CollisionSenses collisionSenses;
+    private Movement movement;
+	//private CollisionSenses collisionSenses;
+    private EnemySenses enemySenses;
 
-	protected D_LookForPlayer stateData;
+
+    protected D_LookForPlayer stateData;
 
 	protected bool turnImmediately;
 	protected bool isPlayerInMinAgroRange;
@@ -26,8 +29,7 @@ public class LookForPlayerState : State {
 
 	public override void DoChecks() {
 		base.DoChecks();
-
-		isPlayerInMinAgroRange = entity.CheckPlayerInMinAgroRange();
+        isPlayerInMinAgroRange = EnemySenses.IsSensorTriggered("M1_Player");
 	}
 
 	public override void Enter() {

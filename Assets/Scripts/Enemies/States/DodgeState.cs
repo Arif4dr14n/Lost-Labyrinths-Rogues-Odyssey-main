@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class DodgeState : State {
 	private Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
-	private CollisionSenses CollisionSenses { get => collisionSenses ?? core.GetCoreComponent(ref collisionSenses); }
+	//private CollisionSenses CollisionSenses { get => collisionSenses ?? core.GetCoreComponent(ref collisionSenses); }
 
 	private Movement movement;
-	private CollisionSenses collisionSenses;
+	//private CollisionSenses collisionSenses;
+    private EnemySenses EnemySenses { get => enemySenses ?? core.GetCoreComponent(ref enemySenses); }
 
-	protected D_DodgeState stateData;
+    private EnemySenses enemySenses;
+
+    protected D_DodgeState stateData;
 
 	protected bool performCloseRangeAction;
 	protected bool isPlayerInMaxAgroRange;
@@ -23,9 +26,9 @@ public class DodgeState : State {
 	public override void DoChecks() {
 		base.DoChecks();
 
-		performCloseRangeAction = entity.CheckPlayerInCloseRangeAction();
-		isPlayerInMaxAgroRange = entity.CheckPlayerInMaxAgroRange();
-		isGrounded = CollisionSenses.Ground;
+		performCloseRangeAction = EnemySenses.IsSensorTriggered("M1_Player");
+		isPlayerInMaxAgroRange = EnemySenses.IsSensorTriggered("M3_Player");
+		isGrounded = EnemySenses.IsSensorTriggered("B1_Ground");
 	}
 
 	public override void Enter() {

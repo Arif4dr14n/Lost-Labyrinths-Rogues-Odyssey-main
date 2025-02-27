@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class MoveState : State {
 	private Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
-	private CollisionSenses CollisionSenses { get => collisionSenses ?? core.GetCoreComponent(ref collisionSenses); }
+	//private CollisionSenses CollisionSenses { get => collisionSenses ?? core.GetCoreComponent(ref collisionSenses); }
+	private EnemySenses EnemySenses { get => enemySenses ?? core.GetCoreComponent(ref enemySenses); }
 
 	private Movement movement;
-	private CollisionSenses collisionSenses;
+	//private CollisionSenses collisionSenses;
+	private EnemySenses enemySenses;
 
 	protected D_MoveState stateData;
 
@@ -22,10 +24,13 @@ public class MoveState : State {
 	public override void DoChecks() {
 		base.DoChecks();
 
-		isDetectingLedge = CollisionSenses.LedgeVertical;
-		isDetectingWall = CollisionSenses.WallFront;
-		isPlayerInMinAgroRange = entity.CheckPlayerInMinAgroRange();
-	}
+        //isDetectingLedge = CollisionSenses.LedgeVertical;
+        //isDetectingWall = CollisionSenses.WallFront;
+        //isPlayerInMinAgroRange = entity.CheckPlayerInMinAgroRange();
+        isDetectingLedge = EnemySenses.IsSensorTriggered("B1_Ground");
+        isDetectingWall = EnemySenses.IsSensorTriggered("M1_Ground");
+        isPlayerInMinAgroRange = EnemySenses.IsSensorTriggered("M2_Player");
+    }
 
 	public override void Enter() {
 		base.Enter();

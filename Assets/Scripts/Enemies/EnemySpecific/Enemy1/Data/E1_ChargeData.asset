@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chargeSpeed: 6
   chargeTime: 1.5
+  jumpForce: 20
