@@ -6,13 +6,10 @@ public class EnemyDashState : State
 {
     protected D_EnemyDashState stateData;
     protected bool isDashOver;
-<<<<<<< Updated upstream
     protected bool isPlayerInMinAgroRange;
-=======
     protected Vector2 dashStartPosition;
     protected BoxCollider2D enemyCollider;
     protected int dashDirection;
->>>>>>> Stashed changes
 
     private Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
     private CollisionSenses CollisionSenses { get => collisionSenses ?? core.GetCoreComponent(ref collisionSenses); }
@@ -39,8 +36,6 @@ public class EnemyDashState : State
         base.Enter();
         Debug.Log("Dash Melakukan dash");
         isDashOver = false;
-<<<<<<< Updated upstream
-=======
         dashStartPosition = entity.transform.position;
 
         if (!stateData.dashTowardPlayer)
@@ -61,7 +56,6 @@ public class EnemyDashState : State
             Movement.Flip();
             Debug.Log("Mendeteksi tembok, berbalik arah");
         }
->>>>>>> Stashed changes
 
         Movement?.SetVelocityX(stateData.dashSpeed * dashDirection);
     }
@@ -69,9 +63,7 @@ public class EnemyDashState : State
     public override void LogicUpdate()
     {
         base.LogicUpdate();
-<<<<<<< Updated upstream
         if (Time.time >= startTime + stateData.dashDuration)
-=======
         DoChecks();
         if (!isDetectingLedge)
         {
@@ -80,7 +72,6 @@ public class EnemyDashState : State
         }
 
         if (Mathf.Abs(entity.transform.position.x - dashStartPosition.x) >= stateData.dashDistance)
->>>>>>> Stashed changes
         {
             isDashOver = true;
             Debug.Log("Dash selesai");
