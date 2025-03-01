@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class IdleState : State {
-	private Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
-	//private CollisionSenses CollisionSenses { get => collisionSenses ?? core.GetCoreComponent(ref collisionSenses); }
+	protected Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
 
 	private Movement movement;
-	//private CollisionSenses collisionSenses;
-    private EnemySenses EnemySenses { get => enemySenses ?? core.GetCoreComponent(ref enemySenses); }
+    protected EnemySenses EnemySenses { get => enemySenses ?? core.GetCoreComponent(ref enemySenses); }
 
     private EnemySenses enemySenses;
 

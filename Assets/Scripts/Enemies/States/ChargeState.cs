@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class ChargeState : State {
 	private Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
-	//private CollisionSenses CollisionSenses { get => collisionSenses ?? core.GetCoreComponent(ref collisionSenses); }
 
 	private Movement movement;
-	//private CollisionSenses collisionSenses;
     private EnemySenses EnemySenses { get => enemySenses ?? core.GetCoreComponent(ref enemySenses); }
 
     private EnemySenses enemySenses;
@@ -30,11 +28,6 @@ public class ChargeState : State {
 	public override void DoChecks() {
 		base.DoChecks();
 
-		//isPlayerInMinAgroRange = entity.CheckPlayerInMinAgroRange();
-		//isDetectingLedge = CollisionSenses.LedgeVertical;
-		//isDetectingWall = CollisionSenses.WallFront;
-
-		//performCloseRangeAction = entity.CheckPlayerInCloseRangeAction();
 		isPlayerInMinAgroRange = EnemySenses.IsSensorTriggered("M2_Player");
         isDetectingLedge = EnemySenses.IsSensorTriggered("B1_Ground");
         isDetectingWall = EnemySenses.IsSensorTriggered("M1_Ground");

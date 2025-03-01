@@ -16,14 +16,14 @@ public class E5_EnemyDashState : EnemyDashState
     {
         base.Enter();
 
-        enemy.enemyCollider.enabled = false;
+        enemy.BC.enabled = false;
     }
 
     public override void Exit()
     {
         base.Exit();
 
-        enemy.enemyCollider.enabled = true;
+        enemy.BC.enabled = true;
     }
 
     public override void LogicUpdate()

@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class LookForPlayerState : State {
-	private Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
-	//private CollisionSenses CollisionSenses { get => collisionSenses ?? core.GetCoreComponent(ref collisionSenses); }
-    private EnemySenses	EnemySenses { get => enemySenses ?? core.GetCoreComponent(ref enemySenses); }
+	protected Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
+    protected EnemySenses	EnemySenses { get => enemySenses ?? core.GetCoreComponent(ref enemySenses); }
 
     private Movement movement;
-	//private CollisionSenses collisionSenses;
     private EnemySenses enemySenses;
 
 
