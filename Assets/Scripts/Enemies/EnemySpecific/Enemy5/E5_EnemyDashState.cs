@@ -15,15 +15,11 @@ public class E5_EnemyDashState : EnemyDashState
     public override void Enter()
     {
         base.Enter();
-
-        enemy.BC.enabled = false;
     }
 
     public override void Exit()
     {
         base.Exit();
-
-        enemy.BC.enabled = true;
     }
 
     public override void LogicUpdate()
@@ -32,7 +28,12 @@ public class E5_EnemyDashState : EnemyDashState
 
         if (isDashOver)
         {
-            stateMachine.ChangeState(enemy.moveState);
+            Movement?.Flip();
+            stateMachine.ChangeState(enemy.rangedAttackState);
         }
+    }
+    public void FinishDashing()
+    {
+        isDashOver = true;
     }
 }

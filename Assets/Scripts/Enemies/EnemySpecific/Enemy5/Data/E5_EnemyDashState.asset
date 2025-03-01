@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7292db55bf516824688303387febceae, type: 3}
   m_Name: E5_EnemyDashState
   m_EditorClassIdentifier: 
-  dashSpeed: 10
+  dashSpeed: 30
+  dashDuration: 0.5
   dashDistance: 10
   dashTowardPlayer: 0

@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1375322352893061351}
   - component: {fileID: 7737389468710225146}
-  - component: {fileID: 3248850551641255626}
   m_Layer: 9
   m_Name: CollissionSenses
   m_TagString: Untagged
@@ -47,56 +46,58 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sensors:
   - sensorName: T1_Ground
+    sensorType: 0
     positionOffset: {x: 2.3, y: 1.5}
     size: {x: 0.5, y: 0.5}
+    radius: 0.15
     detectionLayer:
       serializedVersion: 2
       m_Bits: 256
   - sensorName: M1_Ground
+    sensorType: 0
     positionOffset: {x: 2.3, y: 0}
     size: {x: 0.5, y: 0.5}
+    radius: 0.15
     detectionLayer:
       serializedVersion: 2
       m_Bits: 256
   - sensorName: B1_Ground
+    sensorType: 0
     positionOffset: {x: 2.3, y: -1.6}
     size: {x: 0.5, y: 0.5}
+    radius: 0.15
     detectionLayer:
       serializedVersion: 2
       m_Bits: 256
   - sensorName: B2_Ground
+    sensorType: 0
     positionOffset: {x: 3.8, y: -1.6}
     size: {x: 0.5, y: 0.5}
+    radius: 0.15
     detectionLayer:
       serializedVersion: 2
       m_Bits: 256
   - sensorName: M2_Player
+    sensorType: 0
     positionOffset: {x: 3, y: 0}
     size: {x: 0.5, y: 0.5}
+    radius: 0.15
     detectionLayer:
       serializedVersion: 2
       m_Bits: 2048
   - sensorName: M3_Player
+    sensorType: 0
     positionOffset: {x: 6, y: 0}
     size: {x: 0.5, y: 0.5}
+    radius: 0.15
     detectionLayer:
       serializedVersion: 2
       m_Bits: 2048
   - sensorName: M1_Player
+    sensorType: 0
     positionOffset: {x: 2.3, y: 0}
     size: {x: 0.5, y: 0.5}
+    radius: 0.15
     detectionLayer:
       serializedVersion: 2
       m_Bits: 2048
---- !u!114 &3248850551641255626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5354468920812686860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f2c866657ebb6c4b84389e4ab08708a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

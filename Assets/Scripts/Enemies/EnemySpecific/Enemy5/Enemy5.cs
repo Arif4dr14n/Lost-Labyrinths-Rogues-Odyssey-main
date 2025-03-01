@@ -31,16 +31,13 @@ public class Enemy5 : Entity
     private D_RangedAttackState rangedAttackStateData;
     [SerializeField]
     private D_EnemyDashState enemyDashStateData;
-
-    [SerializeField]
-    private Transform meleeAttackPosition;
     [SerializeField]
     private Transform rangedAttackPosition;
 
     public override void Awake()
     {
         base.Awake();
-        BC = GetComponentInParent<BoxCollider2D>();
+        //BC = GetComponentInParent<BoxCollider2D>();
         moveState = new E5_MoveState(this, stateMachine, "move", moveStateData, this);
         idleState = new E5_IdleState(this, stateMachine, "idle", idleStateData, this);
         playerDetectedState = new E5_PlayerDetectedState(this, stateMachine, "playerDetected", playerDetectedStateData, this);

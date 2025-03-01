@@ -11,14 +11,10 @@ public class EnemyDashState : State
     protected BoxCollider2D enemyCollider;
     protected int dashDirection;
 
-    private Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
-    private CollisionSenses CollisionSenses { get => collisionSenses ?? core.GetCoreComponent(ref collisionSenses); }
-
+    protected Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
     private Movement movement;
-    private CollisionSenses collisionSenses;
-
-    protected bool isDetectingLedge;
-    protected bool isDetectingWall;
+    protected EnemySenses EnemySenses { get => enemySenses ?? core.GetCoreComponent(ref enemySenses); }
+    private EnemySenses enemySenses;
 
     public EnemyDashState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, D_EnemyDashState stateData): base(entity, stateMachine, animBoolName)
     {
@@ -28,15 +24,15 @@ public class EnemyDashState : State
     public override void DoChecks()
     {
         base.DoChecks();
-        isDetectingLedge = CollisionSenses.LedgeVertical;
-        isDetectingWall = CollisionSenses.WallFront;
     }
     public override void Enter()
     {
         base.Enter();
-        Debug.Log("Dash Melakukan dash");
+        Debug.Log("Enemy Melakukan dash");
         isDashOver = false;
         dashStartPosition = entity.transform.position;
+
+        entity.gameObject.layer = LayerMask.NameToLayer("EnemyDash");
 
         if (!stateData.dashTowardPlayer)
         {
@@ -46,12 +42,7 @@ public class EnemyDashState : State
 
         dashDirection = Movement.FacingDirection;
 
-        enemyCollider = entity.GetComponent<BoxCollider2D>();
-        if (enemyCollider != null)
-        {
-            enemyCollider.enabled = false;
-        }
-        if (isDetectingWall)
+        if (EnemySenses.IsSensorTriggered("M1_Ground"))
         {
             Movement.Flip();
             Debug.Log("Mendeteksi tembok, berbalik arah");
@@ -60,27 +51,33 @@ public class EnemyDashState : State
         Movement?.SetVelocityX(stateData.dashSpeed * dashDirection);
     }
 
+    public override void Exit()
+    {
+        base.Exit();
+        entity.gameObject.layer = LayerMask.NameToLayer("Damageable");
+        isDashOver = true;
+        Debug.Log("Dash selesai, musuh kembali bisa terkena hit");
+    }
+
+
     public override void LogicUpdate()
     {
         base.LogicUpdate();
         if (Time.time >= startTime + stateData.dashDuration)
-        DoChecks();
-        if (!isDetectingLedge)
         {
             isDashOver = true;
-            Debug.Log("Dash berhenti karena tidak mendeteksi ledge");
+            Debug.Log("Dash selesai karena durasi habis");
         }
-
         if (Mathf.Abs(entity.transform.position.x - dashStartPosition.x) >= stateData.dashDistance)
         {
             isDashOver = true;
-            Debug.Log("Dash selesai");
+            Debug.Log("Dash selesai karena sudah mencapai jarak maksimal");
         }
-
+        if (EnemySenses.IsSensorTriggered("M1_Ground"))
+        {
+            isDashOver = true;
+            Debug.Log("Dash berhenti karena menabrak tembok");
+        }
     }
 
-    public override void Exit()
-    {
-        base.Exit();
-    }
 }
