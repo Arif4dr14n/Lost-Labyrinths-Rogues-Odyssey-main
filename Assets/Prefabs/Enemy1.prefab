@@ -632,10 +632,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movement: {fileID: 0}
   entityData: {fileID: 11400000, guid: d831123858746b3438d74b9fa14e2104, type: 2}
-  wallCheck: {fileID: 0}
-  ledgeCheck: {fileID: 0}
-  playerCheck: {fileID: 6621205785732173891}
-  groundCheck: {fileID: 0}
   idleStateData: {fileID: 11400000, guid: a12d58295869d5c4b8a72dd70b9e367e, type: 2}
   moveStateData: {fileID: 11400000, guid: d71407fa20cb3eb42ae5412ed3504c41, type: 2}
   playerDetectedData: {fileID: 11400000, guid: ba0ca8ecf99120845b274a5ff27a54a8, type: 2}
@@ -717,18 +713,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7737389468710225146, guid: 1eeb9062e93957f4cb5c694b6886fba7,
         type: 3}
-      propertyPath: sensors.Array.data[2].size.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7737389468710225146, guid: 1eeb9062e93957f4cb5c694b6886fba7,
-        type: 3}
       propertyPath: sensors.Array.data[2].size.y
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7737389468710225146, guid: 1eeb9062e93957f4cb5c694b6886fba7,
-        type: 3}
-      propertyPath: sensors.Array.data[2].sensorType
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7737389468710225146, guid: 1eeb9062e93957f4cb5c694b6886fba7,
         type: 3}

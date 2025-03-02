@@ -47,7 +47,7 @@ MonoBehaviour:
   sensors:
   - sensorName: T1_Ground
     sensorType: 0
-    positionOffset: {x: 2.3, y: 1.5}
+    positionOffset: {x: 1.5, y: 0}
     size: {x: 0.5, y: 0.5}
     radius: 0.15
     detectionLayer:
@@ -55,7 +55,7 @@ MonoBehaviour:
       m_Bits: 256
   - sensorName: M1_Ground
     sensorType: 0
-    positionOffset: {x: 2.3, y: 0}
+    positionOffset: {x: 1.5, y: -0.7}
     size: {x: 0.5, y: 0.5}
     radius: 0.15
     detectionLayer:
@@ -63,15 +63,15 @@ MonoBehaviour:
       m_Bits: 256
   - sensorName: B1_Ground
     sensorType: 0
-    positionOffset: {x: 2.3, y: -1.6}
+    positionOffset: {x: 1.2, y: -1.6}
     size: {x: 0.5, y: 0.5}
-    radius: 0.15
+    radius: 0.5
     detectionLayer:
       serializedVersion: 2
       m_Bits: 256
   - sensorName: B2_Ground
     sensorType: 0
-    positionOffset: {x: 3.8, y: -1.6}
+    positionOffset: {x: 2.5, y: -1.6}
     size: {x: 0.5, y: 0.5}
     radius: 0.15
     detectionLayer:
@@ -79,25 +79,25 @@ MonoBehaviour:
       m_Bits: 256
   - sensorName: M2_Player
     sensorType: 0
-    positionOffset: {x: 3, y: 0}
-    size: {x: 0.5, y: 0.5}
+    positionOffset: {x: 5.4, y: -0.3}
+    size: {x: 5, y: 1}
     radius: 0.15
     detectionLayer:
       serializedVersion: 2
       m_Bits: 2048
   - sensorName: M3_Player
     sensorType: 0
-    positionOffset: {x: 6, y: 0}
-    size: {x: 0.5, y: 0.5}
+    positionOffset: {x: 9, y: -0.3}
+    size: {x: 2, y: 1}
     radius: 0.15
     detectionLayer:
       serializedVersion: 2
       m_Bits: 2048
   - sensorName: M1_Player
-    sensorType: 0
-    positionOffset: {x: 2.3, y: 0}
-    size: {x: 0.5, y: 0.5}
-    radius: 0.15
+    sensorType: 1
+    positionOffset: {x: 1.9, y: 0.4}
+    size: {x: 1, y: 1}
+    radius: 1
     detectionLayer:
       serializedVersion: 2
       m_Bits: 2048

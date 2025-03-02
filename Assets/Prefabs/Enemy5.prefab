@@ -426,10 +426,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movement: {fileID: 0}
   entityData: {fileID: 11400000, guid: f30fb08dc465bfc46b2f75527b3be5d9, type: 2}
-  wallCheck: {fileID: 0}
-  ledgeCheck: {fileID: 0}
-  playerCheck: {fileID: 0}
-  groundCheck: {fileID: 0}
   moveStateData: {fileID: 11400000, guid: e11a8b2ee7064f6489940acefa5ac084, type: 2}
   idleStateData: {fileID: 11400000, guid: cad562f7292612c4482d04d46347d768, type: 2}
   playerDetectedStateData: {fileID: 11400000, guid: 33ed1a1cbe5a15c4ab1756cdb00569d8,
@@ -441,7 +437,6 @@ MonoBehaviour:
   rangedAttackStateData: {fileID: 11400000, guid: b1c61aa5de94c8c4594071ab341d5ad4,
     type: 2}
   enemyDashStateData: {fileID: 11400000, guid: 89678d74dfff1d44bb813e202d9ca47c, type: 2}
-  meleeAttackPosition: {fileID: 0}
   rangedAttackPosition: {fileID: 2567005864257392525}
 --- !u!1 &4109640564938728611
 GameObject:
