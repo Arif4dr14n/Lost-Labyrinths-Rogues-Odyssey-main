@@ -7,7 +7,7 @@ using UnityEngine.Tilemaps;
 
 
 
-public class LevelGenerator : MonoBehaviour
+public class LevelGeneratorLab : MonoBehaviour
 {
     public GameManager gameManager;
     public Grid spawnGrid;
@@ -26,6 +26,7 @@ public class LevelGenerator : MonoBehaviour
     public TileBase dangerTile;
     public TileBase shopTile;
     public TileBase treasureTile;
+    public TileBase gasTile;
 
     public float enemySpawnCoefficient = 10f;
     public EnemyManager enemyManager;
@@ -37,10 +38,15 @@ public class LevelGenerator : MonoBehaviour
     public Tilemap spikeTilemap;
     public float spikeSpawnCoefficient = 20f;
 
+    public TileBase gasRuleTile;
+    public Tilemap gasTilemap;
+    public float gasSpawnCoefficient = 20f;
+
     private Vector3 playerSpawnPos = Vector3.zero;
 
     private List<Vector3Int> enemyTilePos = new();
     private List<Vector3Int> dangerTilePos = new();
+    private List<Vector3Int> gasTilePos = new();
     private Vector2Int defaultRoomSize;
 
     public TileBase mapTile;
@@ -231,6 +237,10 @@ public class LevelGenerator : MonoBehaviour
                             {
                                 dangerTilePos.Add(tileSpawnPos);
                             }
+                            else if (tile == gasTile)
+                            {
+                                gasTilePos.Add(tileSpawnPos);
+                            }
                             else if (tile == treasureTile)
                             {
                                 treasurePosList.Add(tileSpawnPos);
@@ -267,6 +277,7 @@ public class LevelGenerator : MonoBehaviour
         FillEmptyGrid(levelGrid, posOffset);
         SpawnPlayer();
         SpawnSpikes();
+        SpawnGas();
         SpawnTreasures();
         SpawnShop();
         SpawnEnemies();
@@ -541,6 +552,33 @@ public class LevelGenerator : MonoBehaviour
                 foreach (var spawnPos in group)
                 {
                     spikeTilemap.SetTile(spawnPos, spikeRuleTile);                    
+                }
+            }
+        }
+    }
+
+    private void SpawnGas()
+    {
+        // Group Enemy Tiles Based On Adjacent Position
+        List<List<Vector3Int>> groupedGasTiles = GroupAdjacentTiles(gasTilePos);
+        // Debug.Log(groupedGasTiles.Count);
+
+        foreach (List<Vector3Int> group in groupedGasTiles)
+        {
+            // Debug.Log(group.Count);
+            int tileCount = group.Count;
+
+            int difficulty = gameManager.difficulty;
+
+            // Assuming gameManager.difficulty is an int between 0 - 100
+            float spawnProbability = Mathf.Clamp01(tileCount * spikeSpawnCoefficient * (difficulty / 100f) / 100f);
+            bool spawnGas = UnityEngine.Random.value <= spawnProbability;
+
+            if (spawnGas)
+            {
+                foreach (var spawnPos in group)
+                {
+                    gasTilemap.SetTile(spawnPos, gasRuleTile);
                 }
             }
         }

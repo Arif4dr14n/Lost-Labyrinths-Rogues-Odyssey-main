@@ -7,7 +7,7 @@ using UnityEngine.Tilemaps;
 
 
 
-public class LevelGenerator : MonoBehaviour
+public class LevelGeneratorCave : MonoBehaviour
 {
     public GameManager gameManager;
     public Grid spawnGrid;
@@ -26,6 +26,7 @@ public class LevelGenerator : MonoBehaviour
     public TileBase dangerTile;
     public TileBase shopTile;
     public TileBase treasureTile;
+    public TileBase stalagmiteTile;
 
     public float enemySpawnCoefficient = 10f;
     public EnemyManager enemyManager;
@@ -37,10 +38,14 @@ public class LevelGenerator : MonoBehaviour
     public Tilemap spikeTilemap;
     public float spikeSpawnCoefficient = 20f;
 
+    public TileBase stalagmiteRuleTile;
+    public Tilemap stalagmiteTilemap;
+
     private Vector3 playerSpawnPos = Vector3.zero;
 
     private List<Vector3Int> enemyTilePos = new();
     private List<Vector3Int> dangerTilePos = new();
+    private List<Vector3Int> stalagmiteTilePos = new();
     private Vector2Int defaultRoomSize;
 
     public TileBase mapTile;
@@ -231,6 +236,10 @@ public class LevelGenerator : MonoBehaviour
                             {
                                 dangerTilePos.Add(tileSpawnPos);
                             }
+                            else if (tile == stalagmiteTile)
+                            {
+                                stalagmiteTilePos.Add(tileSpawnPos);
+                            }
                             else if (tile == treasureTile)
                             {
                                 treasurePosList.Add(tileSpawnPos);
@@ -267,6 +276,7 @@ public class LevelGenerator : MonoBehaviour
         FillEmptyGrid(levelGrid, posOffset);
         SpawnPlayer();
         SpawnSpikes();
+        SpawnStalagmite();
         SpawnTreasures();
         SpawnShop();
         SpawnEnemies();
@@ -542,6 +552,21 @@ public class LevelGenerator : MonoBehaviour
                 {
                     spikeTilemap.SetTile(spawnPos, spikeRuleTile);                    
                 }
+            }
+        }
+    }
+
+    private void SpawnStalagmite()
+    {
+        // Group Enemy Tiles Based On Adjacent Position
+        List<List<Vector3Int>> groupedStalagmiteTiles = GroupAdjacentTiles(stalagmiteTilePos);
+        // Debug.Log(groupedSpikeTiles.Count);
+
+        foreach (List<Vector3Int> group in groupedStalagmiteTiles)
+        {
+            foreach (var spawnPos in group)
+            {
+                stalagmiteTilemap.SetTile(spawnPos, stalagmiteRuleTile);
             }
         }
     }
