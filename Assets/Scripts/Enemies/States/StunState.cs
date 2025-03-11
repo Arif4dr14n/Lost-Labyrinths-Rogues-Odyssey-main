@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class StunState : State {
 	private Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
-	private CollisionSenses CollisionSenses { get => collisionSenses ?? core.GetCoreComponent(ref collisionSenses); }
+	//private CollisionSenses CollisionSenses { get => collisionSenses ?? core.GetCoreComponent(ref collisionSenses); }
 
 	private Movement movement;
-	private CollisionSenses collisionSenses;
+	//private CollisionSenses collisionSenses;
+    private EnemySenses EnemySenses { get => enemySenses ?? core.GetCoreComponent(ref enemySenses); }
 
-	protected D_StunState stateData;
+    private EnemySenses enemySenses;
+
+    protected D_StunState stateData;
 
 	protected bool isStunTimeOver;
 	protected bool isGrounded;
@@ -24,9 +27,9 @@ public class StunState : State {
 	public override void DoChecks() {
 		base.DoChecks();
 
-		isGrounded = CollisionSenses.Ground;
-		performCloseRangeAction = entity.CheckPlayerInCloseRangeAction();
-		isPlayerInMinAgroRange = entity.CheckPlayerInMinAgroRange();
+		isGrounded = EnemySenses.IsSensorTriggered("B1_Ground");
+		performCloseRangeAction = EnemySenses.IsSensorTriggered("M1_Player");
+		isPlayerInMinAgroRange = EnemySenses.IsSensorTriggered("M2_Player");
 	}
 
 	public override void Enter() {

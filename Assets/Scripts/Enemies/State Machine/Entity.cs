@@ -16,15 +16,6 @@ public class Entity : MonoBehaviour {
 	public int lastDamageDirection { get; private set; }
 	public Core Core { get; private set; }
 
-	[SerializeField]
-	protected Transform wallCheck;
-	[SerializeField]
-	protected Transform ledgeCheck;
-	[SerializeField]
-	protected Transform playerCheck;
-	[SerializeField]
-	protected Transform groundCheck;
-
 	private float currentHealth;
 	private float currentStunResistance;
 	private float lastDamageTime;
@@ -69,18 +60,6 @@ public class Entity : MonoBehaviour {
 		stateMachine.currentState.PhysicsUpdate();
 	}
 
-	public virtual bool CheckPlayerInMinAgroRange() {
-		return Physics2D.Raycast(playerCheck.position, transform.right, entityData.minAgroDistance, entityData.whatIsPlayer);
-	}
-
-	public virtual bool CheckPlayerInMaxAgroRange() {
-		return Physics2D.Raycast(playerCheck.position, transform.right, entityData.maxAgroDistance, entityData.whatIsPlayer);
-	}
-
-	public virtual bool CheckPlayerInCloseRangeAction() {
-		return Physics2D.Raycast(playerCheck.position, transform.right, entityData.closeRangeActionDistance, entityData.whatIsPlayer);
-	}
-
 	public virtual void DamageHop(float velocity) {
 		velocityWorkspace.Set(Movement.RB.velocity.x, velocity);
 		Movement.RB.velocity = velocityWorkspace;
@@ -92,14 +71,5 @@ public class Entity : MonoBehaviour {
 	}
 
 	public virtual void OnDrawGizmos() {
-		if (Core != null)
-		{
-			Gizmos.DrawLine(wallCheck.position, wallCheck.position + (Vector3)(Vector2.right * Movement.FacingDirection * entityData.wallCheckDistance));
-			Gizmos.DrawLine(ledgeCheck.position, ledgeCheck.position + (Vector3)(Vector2.down * entityData.ledgeCheckDistance));
-
-			Gizmos.DrawWireSphere(playerCheck.position + (Vector3)(Vector2.right * entityData.closeRangeActionDistance), 0.2f);
-			Gizmos.DrawWireSphere(playerCheck.position + (Vector3)(Vector2.right * entityData.minAgroDistance), 0.2f);
-			Gizmos.DrawWireSphere(playerCheck.position + (Vector3)(Vector2.right * entityData.maxAgroDistance), 0.2f);
-		}
 	}
 }

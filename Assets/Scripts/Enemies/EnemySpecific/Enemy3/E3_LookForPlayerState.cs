@@ -28,6 +28,7 @@ public class E3_LookForPlayerState : LookForPlayerState
     public override void LogicUpdate()
     {
         base.LogicUpdate();
+        Debug.Log($"isPlayerInMinAggroRange = {isPlayerInMinAgroRange}");
 
         if (isPlayerInMinAgroRange)
         {

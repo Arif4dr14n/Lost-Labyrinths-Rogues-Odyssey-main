@@ -21,6 +21,7 @@ public class E5_PlayerDetectedState : PlayerDetectedState
     public override void Enter()
     {
         base.Enter();
+        Debug.Log("Enemy detecting player");
     }
 
     public override void Exit()
@@ -32,22 +33,16 @@ public class E5_PlayerDetectedState : PlayerDetectedState
     {
         base.LogicUpdate();
 
-        if (performCloseRangeAction)
+        if (EnemySenses.IsSensorTriggered("M1_Player"))
         {
+            Debug.Log("Enemy Dash");
             stateMachine.ChangeState(enemy.enemyDashState);
         }
-        else if (performLongRangeAction)
+        else if (isPlayerInMinAgroRange)
         {
-            if (random.Next(2) == 0)
-            {
-                stateMachine.ChangeState(enemy.rangedAttackState);
-                Debug.Log("Melakukan Ranged Attack");
-            }
-            else
-            {
-                stateMachine.ChangeState(enemy.chargeState);
-                Debug.Log("Melakukan Charge");
-            }
+            stateMachine.ChangeState(enemy.rangedAttackState);
+            Debug.Log("Melakukan Ranged Attack");
+
         }
         else if (!isPlayerInMaxAgroRange)
         {

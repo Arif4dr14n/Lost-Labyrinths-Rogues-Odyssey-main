@@ -22,7 +22,7 @@ public class E1_PlayerDetectedState : PlayerDetectedState {
 
 		if (performCloseRangeAction) {
 			stateMachine.ChangeState(enemy.meleeAttackState);
-		} else if (performLongRangeAction) {
+		} else if (isPlayerInMinAgroRange) {
 			stateMachine.ChangeState(enemy.chargeState);
 		} else if (!isPlayerInMaxAgroRange) {
 			stateMachine.ChangeState(enemy.lookForPlayerState);
