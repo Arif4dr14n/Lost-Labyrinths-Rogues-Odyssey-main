@@ -21,7 +21,6 @@ public class MeleeAttackState : AttackState {
 
 	public override void Enter() {
 		base.Enter();
-        Debug.Log("Enemy Melakukan Melee Attack");
     }
 
 	public override void Exit() {

@@ -19,6 +19,7 @@ public class E5_MoveState : MoveState
     public override void Enter()
     {
         base.Enter();
+        Debug.Log("Enemy move state");
     }
 
     public override void Exit()

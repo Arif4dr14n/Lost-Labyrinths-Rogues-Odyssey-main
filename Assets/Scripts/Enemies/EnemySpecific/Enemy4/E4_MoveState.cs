@@ -6,7 +6,8 @@ public class E4_MoveState : MoveState
 {
     private Enemy4 enemy;
 
-    public E4_MoveState(Entity etity, FiniteStateMachine stateMachine, string animBoolName, D_MoveState stateData, Enemy4 enemy) : base(etity, stateMachine, animBoolName, stateData)
+    public E4_MoveState(Entity entity, FiniteStateMachine stateMachine, string animBoolName, D_MoveState stateData, Enemy4 enemy)
+        : base(entity, stateMachine, animBoolName, stateData)
     {
         this.enemy = enemy;
     }
@@ -35,6 +36,19 @@ public class E4_MoveState : MoveState
         {
             enemy.idleState.SetFlipAfterIdle(true);
             stateMachine.ChangeState(enemy.idleState);
+        }
+        else
+        {
+            if (EnemySenses.IsSensorTriggered("T_Ground"))
+            {
+                enemy.transform.position += Vector3.down;
+                Debug.Log("Enemy moves down 1 tile");
+            }
+            else if (EnemySenses.IsSensorTriggered("B_Ground"))
+            {
+                enemy.transform.position += Vector3.up;
+                Debug.Log("Enemy moves up 1 tile");
+            }
         }
     }
 

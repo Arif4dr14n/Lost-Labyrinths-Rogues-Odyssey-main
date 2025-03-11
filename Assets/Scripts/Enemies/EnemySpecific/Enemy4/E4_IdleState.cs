@@ -34,6 +34,19 @@ public class E4_IdleState : IdleState
         {
             stateMachine.ChangeState(enemy.moveState);
         }
+        else
+        {
+            if (EnemySenses.IsSensorTriggered("T_Ground"))
+            {
+                enemy.transform.position += Vector3.down;
+                Debug.Log("Enemy moves down 1 tile");
+            }
+            else if (EnemySenses.IsSensorTriggered("B_Ground"))
+            {
+                enemy.transform.position += Vector3.up;
+                Debug.Log("Enemy moves up 1 tile");
+            }
+        }
     }
 
     public override void PhysicsUpdate()

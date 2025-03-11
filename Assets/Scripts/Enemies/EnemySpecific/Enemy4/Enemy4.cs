@@ -14,7 +14,7 @@ public class Enemy4 : Entity
     public E4_RangedAttackState2 rangedAttack2State { get; private set; }
 
     [SerializeField]
-    private D_MoveState moveStateData;
+    private D_MoveState moveStateData; 
     [SerializeField]
     private D_IdleState idleStateData;
     [SerializeField]
@@ -60,4 +60,9 @@ public class Enemy4 : Entity
     {
         base.OnDrawGizmos();
     }
+    public D_MoveState GetMoveStateData()
+    {
+        return moveStateData;
+    }
+
 }

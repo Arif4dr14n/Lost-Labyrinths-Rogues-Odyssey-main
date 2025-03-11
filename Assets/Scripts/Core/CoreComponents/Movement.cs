@@ -41,6 +41,8 @@ public class Movement : CoreComponent
     {
         angle.Normalize();
         workspace.Set(angle.x * velocity * direction, angle.y * velocity);
+        Debug.Log($"SetVelocity Called - Velocity: {velocity}, Angle: {angle}, Direction: {direction}, Resulting Velocity: {workspace}");
+
         SetFinalVelocity();
     }
 

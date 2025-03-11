@@ -31,12 +31,16 @@ public class E3_PlayerDetectedState : PlayerDetectedState
     public override void LogicUpdate()
     {
         base.LogicUpdate();
+        Debug.Log($"performCloseRangeAction = {performCloseRangeAction}");
+        Debug.Log($"performLongRangeAction = {performLongRangeAction}");
+        Debug.Log($"isPlayerInMinAggroRange = {isPlayerInMinAgroRange}");
+        Debug.Log($"isPlayerInMaxAggroRange = {isPlayerInMaxAgroRange}");
 
         if (performCloseRangeAction)
         {
             stateMachine.ChangeState(enemy.meleeAttackState);
         }
-        else if (performLongRangeAction)
+        else if (isPlayerInMinAgroRange)
         {
             if (random.Next(2) == 0)
             {
@@ -48,7 +52,7 @@ public class E3_PlayerDetectedState : PlayerDetectedState
                 stateMachine.ChangeState(enemy.chargeState);
                 Debug.Log("Melakukan Charge");
             }
-        }
+    }
         else if (!isPlayerInMaxAgroRange)
         {
             stateMachine.ChangeState(enemy.lookForPlayerState);

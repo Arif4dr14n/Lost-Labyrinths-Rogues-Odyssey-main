@@ -11,13 +11,28 @@ public class E5_EnemyDashState : EnemyDashState
         this.enemy = enemy;
     }
 
+    public override void Enter()
+    {
+        base.Enter();
+    }
+
+    public override void Exit()
+    {
+        base.Exit();
+    }
+
     public override void LogicUpdate()
     {
         base.LogicUpdate();
 
         if (IsDashOver())
         {
-            stateMachine.ChangeState(enemy.lookForPlayerState);
+            Movement?.Flip();
+            stateMachine.ChangeState(enemy.rangedAttackState);
         }
+    }
+    public void FinishDashing()
+    {
+        isDashOver = true;
     }
 }
