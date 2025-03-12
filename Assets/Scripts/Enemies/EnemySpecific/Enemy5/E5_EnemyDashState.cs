@@ -25,7 +25,7 @@ public class E5_EnemyDashState : EnemyDashState
     {
         base.LogicUpdate();
 
-        if (IsDashOver())
+        if (isDashOver)
         {
             Movement?.Flip();
             stateMachine.ChangeState(enemy.rangedAttackState);
