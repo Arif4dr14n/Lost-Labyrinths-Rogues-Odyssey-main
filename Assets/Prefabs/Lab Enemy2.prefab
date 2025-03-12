@@ -707,7 +707,7 @@ PrefabInstance:
     - target: {fileID: 5354468920812686860, guid: 1eeb9062e93957f4cb5c694b6886fba7,
         type: 3}
       propertyPath: m_Name
-      value: CollissionSenses
+      value: EnemySenses
       objectReference: {fileID: 0}
     - target: {fileID: 7737389468710225146, guid: 1eeb9062e93957f4cb5c694b6886fba7,
         type: 3}

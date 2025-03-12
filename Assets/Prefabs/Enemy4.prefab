@@ -502,10 +502,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movement: {fileID: 0}
   entityData: {fileID: 11400000, guid: fee9390248ebae644b47fd9616c6e8b1, type: 2}
-  wallCheck: {fileID: 0}
-  ledgeCheck: {fileID: 0}
-  playerCheck: {fileID: 2203607428877528801}
-  groundCheck: {fileID: 0}
   moveStateData: {fileID: 11400000, guid: da225d2fa7011394897fc00c38f5b5c6, type: 2}
   idleStateData: {fileID: 11400000, guid: a18437f99408e8940acd808fe6c31d73, type: 2}
   playerDetectedStateData: {fileID: 11400000, guid: 8218b6b2f2d41684d994056c719f3246,
@@ -725,7 +721,7 @@ PrefabInstance:
     - target: {fileID: 5354468920812686860, guid: 1eeb9062e93957f4cb5c694b6886fba7,
         type: 3}
       propertyPath: m_Name
-      value: CollissionSenses
+      value: EnemySenses
       objectReference: {fileID: 0}
     - target: {fileID: 7737389468710225146, guid: 1eeb9062e93957f4cb5c694b6886fba7,
         type: 3}

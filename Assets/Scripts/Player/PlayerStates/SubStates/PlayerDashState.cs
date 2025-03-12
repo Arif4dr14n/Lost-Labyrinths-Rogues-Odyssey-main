@@ -40,10 +40,6 @@ public class PlayerDashState : PlayerAbilityState {
         {
             Movement?.SetVelocityY(Movement.CurrentVelocity.y * playerData.dashEndYMultiplier);
         }
-
-        player.Anim.SetBool("isDashing", false);
-        player.Anim.Update(0);
-        Debug.Log("Dash Ended, isDashing set to false");
     }
 
 
@@ -72,10 +68,6 @@ public class PlayerDashState : PlayerAbilityState {
                 if (dashInputStop || Time.unscaledTime >= startTime + playerData.maxHoldTime)
                 {
                     isHolding = false;
-
-                    player.Anim.SetBool("isDashing", true);
-                    player.Anim.Update(0);
-                    Debug.Log("Dash Executed, isDashing set to true");
 
                     Time.timeScale = 1f;
                     startTime = Time.time;

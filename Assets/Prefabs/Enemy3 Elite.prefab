@@ -510,10 +510,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movement: {fileID: 0}
   entityData: {fileID: 11400000, guid: fc807f93b3034b64b87eb1d17452a2bd, type: 2}
-  wallCheck: {fileID: 0}
-  ledgeCheck: {fileID: 0}
-  playerCheck: {fileID: 1728257634604921680}
-  groundCheck: {fileID: 0}
   moveStateData: {fileID: 11400000, guid: 9b34c044ba184694480ae55b6d0ea8a9, type: 2}
   idleStateData: {fileID: 11400000, guid: 62b7a710f9e998b418267793d39e00f6, type: 2}
   playerDetectedStateData: {fileID: 11400000, guid: 8ef7c46625fd0ca4fbeecd4df79bf84a,
@@ -636,7 +632,7 @@ GameObject:
   - component: {fileID: 5425880039857909212}
   - component: {fileID: 8062071363161234120}
   m_Layer: 9
-  m_Name: CollissionSenses
+  m_Name: EnemySenses
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
