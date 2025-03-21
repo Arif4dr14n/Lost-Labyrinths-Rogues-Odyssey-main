@@ -27,6 +27,25 @@ public class LevelGeneratorCave : MonoBehaviour
     public TileBase shopTile;
     public TileBase treasureTile;
     public TileBase stalagmiteTile;
+    public TileBase stalagmiteTile1;
+    public TileBase stalagmiteTile2;
+    public TileBase stalagmiteTile3;
+    public TileBase stalagmiteTile4;
+    public TileBase stalagmiteTile5;
+    public TileBase stalagmiteTile6;
+    public TileBase stalagmiteTile7;
+    public TileBase stalagmiteTile8;
+    public TileBase stalagmiteTile9;
+    public TileBase stalagmiteTile10;
+    public TileBase stalagmiteTile11;
+    public TileBase stalagmiteTile12;
+    public TileBase stalagmiteTile13;
+    public TileBase stalagmiteTile14;
+    public TileBase stalagmiteTile15;
+    public TileBase stalagmiteTile16;
+    public TileBase stalagmiteTile17;
+    public TileBase stalagmiteTile18;
+    public TileBase stalagmiteTile19;
 
     public float enemySpawnCoefficient = 10f;
     public EnemyManager enemyManager;
@@ -40,12 +59,52 @@ public class LevelGeneratorCave : MonoBehaviour
 
     public TileBase stalagmiteRuleTile;
     public Tilemap stalagmiteTilemap;
+    public Tilemap stalagmiteTilemap1;
+    public Tilemap stalagmiteTilemap2;
+    public Tilemap stalagmiteTilemap3;
+    public Tilemap stalagmiteTilemap4;
+    public Tilemap stalagmiteTilemap5;
+    public Tilemap stalagmiteTilemap6;
+    public Tilemap stalagmiteTilemap7;
+    public Tilemap stalagmiteTilemap8;
+    public Tilemap stalagmiteTilemap9;
+    public Tilemap stalagmiteTilemap10;
+    public Tilemap stalagmiteTilemap11;
+    public Tilemap stalagmiteTilemap12;
+    public Tilemap stalagmiteTilemap13;
+    public Tilemap stalagmiteTilemap14;
+    public Tilemap stalagmiteTilemap15;
+    public Tilemap stalagmiteTilemap16;
+    public Tilemap stalagmiteTilemap17;
+    public Tilemap stalagmiteTilemap18;
+    public Tilemap stalagmiteTilemap19;
 
     private Vector3 playerSpawnPos = Vector3.zero;
 
     private List<Vector3Int> enemyTilePos = new();
     private List<Vector3Int> dangerTilePos = new();
+
     private List<Vector3Int> stalagmiteTilePos = new();
+    private List<Vector3Int> stalagmiteTilePos1 = new();
+    private List<Vector3Int> stalagmiteTilePos2 = new();
+    private List<Vector3Int> stalagmiteTilePos3 = new();
+    private List<Vector3Int> stalagmiteTilePos4 = new();
+    private List<Vector3Int> stalagmiteTilePos5 = new();
+    private List<Vector3Int> stalagmiteTilePos6 = new();
+    private List<Vector3Int> stalagmiteTilePos7 = new();
+    private List<Vector3Int> stalagmiteTilePos8 = new();
+    private List<Vector3Int> stalagmiteTilePos9 = new();
+    private List<Vector3Int> stalagmiteTilePos10 = new();
+    private List<Vector3Int> stalagmiteTilePos11 = new();
+    private List<Vector3Int> stalagmiteTilePos12 = new();
+    private List<Vector3Int> stalagmiteTilePos13 = new();
+    private List<Vector3Int> stalagmiteTilePos14 = new();
+    private List<Vector3Int> stalagmiteTilePos15 = new();
+    private List<Vector3Int> stalagmiteTilePos16 = new();
+    private List<Vector3Int> stalagmiteTilePos17 = new();
+    private List<Vector3Int> stalagmiteTilePos18 = new();
+    private List<Vector3Int> stalagmiteTilePos19 = new();
+
     private Vector2Int defaultRoomSize;
 
     public TileBase mapTile;
@@ -240,6 +299,82 @@ public class LevelGeneratorCave : MonoBehaviour
                             {
                                 stalagmiteTilePos.Add(tileSpawnPos);
                             }
+                            else if (tile == stalagmiteTile1)
+                            {
+                                stalagmiteTilePos1.Add(tileSpawnPos);
+                            }
+                            else if (tile == stalagmiteTile2)
+                            {
+                                stalagmiteTilePos2.Add(tileSpawnPos);
+                            }
+                            else if (tile == stalagmiteTile3)
+                            {
+                                stalagmiteTilePos3.Add(tileSpawnPos);
+                            }
+                            else if (tile == stalagmiteTile4)
+                            {
+                                stalagmiteTilePos4.Add(tileSpawnPos);
+                            }
+                            else if (tile == stalagmiteTile5)
+                            {
+                                stalagmiteTilePos5.Add(tileSpawnPos);
+                            }
+                            else if (tile == stalagmiteTile6)
+                            {
+                                stalagmiteTilePos6.Add(tileSpawnPos);
+                            }
+                            else if (tile == stalagmiteTile7)
+                            {
+                                stalagmiteTilePos7.Add(tileSpawnPos);
+                            }
+                            else if (tile == stalagmiteTile8)
+                            {
+                                stalagmiteTilePos8.Add(tileSpawnPos);
+                            }
+                            else if (tile == stalagmiteTile9)
+                            {
+                                stalagmiteTilePos9.Add(tileSpawnPos);
+                            }
+                            else if (tile == stalagmiteTile10)
+                            {
+                                stalagmiteTilePos10.Add(tileSpawnPos);
+                            }
+                            else if (tile == stalagmiteTile11)
+                            {
+                                stalagmiteTilePos11.Add(tileSpawnPos);
+                            }
+                            else if (tile == stalagmiteTile12)
+                            {
+                                stalagmiteTilePos12.Add(tileSpawnPos);
+                            }
+                            else if (tile == stalagmiteTile13)
+                            {
+                                stalagmiteTilePos13.Add(tileSpawnPos);
+                            }
+                            else if (tile == stalagmiteTile14)
+                            {
+                                stalagmiteTilePos14.Add(tileSpawnPos);
+                            }
+                            else if (tile == stalagmiteTile15)
+                            {
+                                stalagmiteTilePos15.Add(tileSpawnPos);
+                            }
+                            else if (tile == stalagmiteTile16)
+                            {
+                                stalagmiteTilePos16.Add(tileSpawnPos);
+                            }
+                            else if (tile == stalagmiteTile17)
+                            {
+                                stalagmiteTilePos17.Add(tileSpawnPos);
+                            }
+                            else if (tile == stalagmiteTile18)
+                            {
+                                stalagmiteTilePos18.Add(tileSpawnPos);
+                            }
+                            else if (tile == stalagmiteTile19)
+                            {
+                                stalagmiteTilePos19.Add(tileSpawnPos);
+                            }
                             else if (tile == treasureTile)
                             {
                                 treasurePosList.Add(tileSpawnPos);
@@ -276,7 +411,26 @@ public class LevelGeneratorCave : MonoBehaviour
         FillEmptyGrid(levelGrid, posOffset);
         SpawnPlayer();
         SpawnSpikes();
-        SpawnStalagmite();
+        SpawnStalagmite(stalagmiteTilePos, stalagmiteTilemap);
+        SpawnStalagmite(stalagmiteTilePos1, stalagmiteTilemap1);
+        SpawnStalagmite(stalagmiteTilePos2, stalagmiteTilemap2);
+        SpawnStalagmite(stalagmiteTilePos3, stalagmiteTilemap3);
+        SpawnStalagmite(stalagmiteTilePos4, stalagmiteTilemap4);
+        SpawnStalagmite(stalagmiteTilePos5, stalagmiteTilemap5);
+        SpawnStalagmite(stalagmiteTilePos6, stalagmiteTilemap6);
+        SpawnStalagmite(stalagmiteTilePos7, stalagmiteTilemap7);
+        SpawnStalagmite(stalagmiteTilePos8, stalagmiteTilemap8);
+        SpawnStalagmite(stalagmiteTilePos9, stalagmiteTilemap9);
+        SpawnStalagmite(stalagmiteTilePos10, stalagmiteTilemap10);
+        SpawnStalagmite(stalagmiteTilePos11, stalagmiteTilemap11);
+        SpawnStalagmite(stalagmiteTilePos12, stalagmiteTilemap12);
+        SpawnStalagmite(stalagmiteTilePos13, stalagmiteTilemap13);
+        SpawnStalagmite(stalagmiteTilePos14, stalagmiteTilemap14);
+        SpawnStalagmite(stalagmiteTilePos15, stalagmiteTilemap15);
+        SpawnStalagmite(stalagmiteTilePos16, stalagmiteTilemap16);
+        SpawnStalagmite(stalagmiteTilePos17, stalagmiteTilemap17);
+        SpawnStalagmite(stalagmiteTilePos18, stalagmiteTilemap18);
+        SpawnStalagmite(stalagmiteTilePos19, stalagmiteTilemap19);
         SpawnTreasures();
         SpawnShop();
         SpawnEnemies();
@@ -556,17 +710,17 @@ public class LevelGeneratorCave : MonoBehaviour
         }
     }
 
-    private void SpawnStalagmite()
+    private void SpawnStalagmite(List<Vector3Int> tilePositions, Tilemap tilemap)
     {
         // Group Enemy Tiles Based On Adjacent Position
-        List<List<Vector3Int>> groupedStalagmiteTiles = GroupAdjacentTiles(stalagmiteTilePos);
+        List<List<Vector3Int>> groupedStalagmiteTiles = GroupAdjacentTiles(tilePositions);
         // Debug.Log(groupedSpikeTiles.Count);
 
         foreach (List<Vector3Int> group in groupedStalagmiteTiles)
         {
             foreach (var spawnPos in group)
             {
-                stalagmiteTilemap.SetTile(spawnPos, stalagmiteRuleTile);
+                tilemap.SetTile(spawnPos, stalagmiteRuleTile);
             }
         }
     }
