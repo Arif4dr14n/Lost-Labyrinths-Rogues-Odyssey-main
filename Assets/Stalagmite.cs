@@ -7,7 +7,7 @@ public class Stalagmite : MonoBehaviour
     public int damageAmount = 10; // Amount of damage to apply
     public float knockbackAmount = 10f; // Amount of knockback to apply
     public float shakeDuration = 0.5f; // Lama getaran sebelum jatuh
-    public float shakeIntensity = 1f; // Intensitas getaran
+    public float shakeIntensity = 0.1f; // Intensitas getaran
     public float respawnTime = 1f; // Waktu untuk respawn
 
     private Vector3 originalPosition;
