@@ -38,7 +38,7 @@ public class BattleSystem : MonoBehaviour
         GameObject enemyGO = Instantiate(enemyPrefab, enemyBattleStation);
         enemyUnit = enemyGO.GetComponent<Unit>();
 
-        dialogueText.text = "A wild " + enemyUnit.unitName + " approaches...";
+        dialogueText.text = "A strong " + enemyUnit.unitName + " has approaches...";
 
         playerHUD.SetHUD(playerUnit);
         enemyHUD.SetHUD(enemyUnit);
@@ -111,9 +111,18 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator ReturnToMainGame()
     {
-        yield return new WaitForSeconds(1f); // Tunggu ... detik sebelum berpindah scene
-        SceneManager.LoadScene("Cave Level"); // Ganti "MainGameScene" dengan nama scene utama di Unity
+        yield return new WaitForSeconds(1f); // Tunggu sebelum berpindah scene
+
+        // Daftar scene tujuan yang memungkinkan
+        string[] scenes = { "Basement Level", "Cave Level", "Lab Level", "Sewerage Level" };
+
+        // Pilih scene secara acak dari daftar
+        string randomScene = scenes[Random.Range(0, scenes.Length)];
+
+        // Pindah ke scene yang dipilih
+        SceneManager.LoadScene(randomScene);
     }
+
 
     void PlayerTurn()
     {

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 751665089911782915}
   - component: {fileID: -7397887637491144316}
   m_Layer: 11
-  m_Name: Player 2
+  m_Name: Great Hero
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,11 +45,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 475d8d7ed9646504888a5702b5d7ed33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitName: Hero
-  unitLevel: 999
-  damage: 5
-  maxHP: 30
-  currentHP: 30
+  unitName: Great Hero
+  unitLevel: 99
+  damage: 7
+  maxHP: 70
+  currentHP: 70
 --- !u!1 &8668862120094764025
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneTransition : MonoBehaviour
+public class SceneTransition1 : MonoBehaviour
 {
     [SerializeField] private string TurnBasedScene; // Nama scene tujuan
 
@@ -9,7 +9,7 @@ public class SceneTransition : MonoBehaviour
     {
         if (other.CompareTag("Player")) // Pastikan Player memiliki tag "Player"
         {
-            SessionManager.LoadTurnBasedCaveWithLoadingScreen();
+            SessionManager.LoadTurnBasedBasementWithLoadingScreen();
         }
     }
 }
