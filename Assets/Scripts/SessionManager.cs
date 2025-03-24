@@ -70,7 +70,7 @@ public class SessionManager : MonoBehaviour
 
     public static void LoadNextLevelWithLoadingScreen()
     {
-        int randomIndex = Random.Range(2, sceneListOrder.Length);
+        int randomIndex = Random.Range(5, sceneListOrder.Length);
         currentSceneIndex++;
         if (currentSceneIndex >= sceneListOrder.Length)
         {
