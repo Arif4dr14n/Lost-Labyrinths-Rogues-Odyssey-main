@@ -85,9 +85,12 @@ public class PlayerInAirState : PlayerState {
 
 		if (player.InputHandler.AttackInputs[(int)CombatInputs.primary]) {
 			stateMachine.ChangeState(player.PrimaryAttackState);
-		} else if (player.InputHandler.AttackInputs[(int)CombatInputs.secondary]) {
+		}
+		else if (player.InputHandler.AttackInputs[(int)CombatInputs.secondary])
+		{
 			stateMachine.ChangeState(player.SecondaryAttackState);
-		} else if (isGrounded && Movement?.CurrentVelocity.y < 0.01f) {
+		}
+		else if (isGrounded && Movement?.CurrentVelocity.y < 0.01f) {
 			stateMachine.ChangeState(player.LandState);
 		} else if (isTouchingWall && !isTouchingLedge && !isGrounded) {
 			stateMachine.ChangeState(player.LedgeClimbState);
