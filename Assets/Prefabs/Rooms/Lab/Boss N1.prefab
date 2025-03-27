@@ -63,7 +63,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 16, y: 3, z: 0}
+  - first: {x: 4, y: 2, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 0
@@ -4473,7 +4473,7 @@ Tilemap:
       - {fileID: 183162190, guid: 02903a2cf945a244cb713ad91416fb1d, type: 3}
       - {fileID: -1459611744, guid: 02903a2cf945a244cb713ad91416fb1d, type: 3}
       - {fileID: -1328507666, guid: 02903a2cf945a244cb713ad91416fb1d, type: 3}
-      m_AnimationSpeed: 2.621488
+      m_AnimationSpeed: 2.0512843
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 11, y: 13, z: 0}
@@ -4489,7 +4489,7 @@ Tilemap:
       - {fileID: 183162190, guid: 02903a2cf945a244cb713ad91416fb1d, type: 3}
       - {fileID: -1459611744, guid: 02903a2cf945a244cb713ad91416fb1d, type: 3}
       - {fileID: -1328507666, guid: 02903a2cf945a244cb713ad91416fb1d, type: 3}
-      m_AnimationSpeed: 2.7287083
+      m_AnimationSpeed: 2.6575482
       m_AnimationTimeOffset: 0
       m_Flags: 0
   m_TileAssetArray:

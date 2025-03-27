@@ -15304,7 +15304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5242a2ef30167e4ea8d4b42ac39b3a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TurnBasedSceneCave: TurnBaseSceneCave
+  TurnBasedScene: 
 --- !u!483693784 &1123206069
 TilemapRenderer:
   m_ObjectHideFlags: 0
