@@ -41,7 +41,7 @@ public class EnemySenses : CoreComponent
             detected = Physics2D.OverlapCircle(worldPosition, sensor.radius, sensor.detectionLayer);
         }
 
-        Debug.Log($"Sensor {sensor.sensorName} ({sensor.sensorType}) checking at position {worldPosition}, detected: {detected}");
+        //Debug.Log($"Sensor {sensor.sensorName} ({sensor.sensorType}) checking at position {worldPosition}, detected: {detected}");
         return detected;
     }
 

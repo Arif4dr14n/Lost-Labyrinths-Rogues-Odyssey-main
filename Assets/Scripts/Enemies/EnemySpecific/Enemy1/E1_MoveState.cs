@@ -24,7 +24,6 @@ public class E1_MoveState : MoveState
     public override void LogicUpdate()
     {
         base.LogicUpdate();
-        Debug.Log($"isDetectingLedge = {isDetectingLedge}");
 
         if (isPlayerInMinAgroRange)
         {

@@ -18142,10 +18142,18 @@ MonoBehaviour:
       type: 3}
     type: 2
     goldValue: 500
-  - prefab: {fileID: 6923035645222436057, guid: d3a41555555dc134e9b48ed91662bcaf,
+  - prefab: {fileID: 5208816242282156968, guid: 98b41c3fd6234bb479d6ca9edff42d92,
       type: 3}
-    type: 2
-    goldValue: 550
+    type: 1
+    goldValue: 250
+  - prefab: {fileID: 8568659481480188824, guid: 252ed2ff82975ba498c96fb96740a875,
+      type: 3}
+    type: 0
+    goldValue: 70
+  - prefab: {fileID: 8568659481480188824, guid: 252ed2ff82975ba498c96fb96740a875,
+      type: 3}
+    type: 0
+    goldValue: 70
 --- !u!1 &2013015732
 GameObject:
   m_ObjectHideFlags: 0
