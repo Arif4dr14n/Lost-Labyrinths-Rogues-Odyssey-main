@@ -12,7 +12,7 @@ public class PlayerData : ScriptableObject
     [Header("Jump State")]
     public float baseJumpVelocity = 15f;
     public float jumpVelocity = 15f;
-    public int amountOfJumps = 2;
+    public int amountOfJumps = 1;
 
     [Header("Wall Jump State")]
     public float wallJumpVelocity = 20;

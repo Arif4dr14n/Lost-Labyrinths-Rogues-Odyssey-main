@@ -5,108 +5,108 @@ using UnityEngine;
 public class PlayerCombatController : MonoBehaviour
 {
     //[SerializeField]
-    //private bool combatenabled;
+    //private bool combatEnabled;
     //[SerializeField]
-    //private float inputtimer, attack1radius, attack1damage;
+    //private float inputTimer, attack1Radius, attack1Damage;
     //[SerializeField]
-    //private float stundamageamount = 1f;
+    //private float stunDamageAmount = 1f;
     //[SerializeField]
-    //private Transform attack1hitboxpos;
+    //private Transform attack1HitBoxPos;
     //[SerializeField]
-    //private LayerMask whatisdamageable;
+    //private LayerMask whatIsDamageable;
+    
+    //private bool gotInput, isAttacking, isFirstAttack;
 
-    //private bool gotinput, isattacking, isfirstattack;
+    //private float lastInputTime = Mathf.NegativeInfinity;
 
-    //private float lastinputtime = Mathf.NegativeInfinity;
-
-    //private attackDetails attackdetails;
+    //private AttackDetails attackDetails;
 
     //private Animator anim;
 
-    //private PlayerController pc;
-    //private PlayerStats ps;
+    //private PlayerController PC;
+    //private PlayerStats PS;
 
-    //private void start()
+    //private void Start()
     //{
     //    anim = GetComponent<Animator>();
-    //    anim.SetBool("canattack", combatenabled);
-    //    pc = GetComponent<PlayerController>();
-    //    ps = GetComponent<PlayerStats>();
+    //    anim.SetBool("canAttack", combatEnabled);
+    //    PC = GetComponent<PlayerController>();
+    //    PS = GetComponent<PlayerStats>();
     //}
 
-    //private void update()
+    //private void Update()
     //{
-    //    checkcombatinput();
-    //    checkattacks();
+    //    CheckCombatInput();
+    //    CheckAttacks();
     //}
 
-    //private void checkcombatinput()
+    //private void CheckCombatInput()
     //{
     //    if (Input.GetMouseButtonDown(0))
     //    {
-    //        if (combatenabled)
+    //        if (combatEnabled)
     //        {
-    //            //attempt combat
-    //            gotinput = true;
-    //            lastinputtime = Time.time;
+    //            //Attempt combat
+    //            gotInput = true;
+    //            lastInputTime = Time.time;
     //        }
     //    }
     //}
 
-    //private void checkattacks()
+    //private void CheckAttacks()
     //{
-    //    if (gotinput)
+    //    if (gotInput)
     //    {
-    //        //perform attack1
-    //        if (!isattacking)
+    //        //Perform Attack1
+    //        if (!isAttacking)
     //        {
-    //            gotinput = false;
-    //            isattacking = true;
-    //            isfirstattack = !isfirstattack;
+    //            gotInput = false;
+    //            isAttacking = true;
+    //            isFirstAttack = !isFirstAttack;
     //            anim.SetBool("attack1", true);
-    //            anim.SetBool("firstattack", isfirstattack);
-    //            anim.SetBool("isattacking", isattacking);
+    //            anim.SetBool("firstAttack", isFirstAttack);
+    //            anim.SetBool("isAttacking", isAttacking);
     //        }
     //    }
 
-    //    if (Time.time >= lastinputtime + inputtimer)
+    //    if(Time.time >= lastInputTime + inputTimer)
     //    {
-    //        //wait for new input
-    //        gotinput = false;
+    //        //Wait for new input
+    //        gotInput = false;
     //    }
     //}
 
-    //private void checkattackhitbox()
+    //private void CheckAttackHitBox()
     //{
-    //    Collider2D[] detectedobjects = Physics2D.OverlapCircleAll(attack1hitboxpos.position, attack1radius, whatisdamageable);
+    //    Collider2D[] detectedObjects = Physics2D.OverlapCircleAll(attack1HitBoxPos.position, attack1Radius, whatIsDamageable);
 
-    //    attackdetails.damageAmount = attack1damage;
-    //    attackdetails.position = transform.position;
-    //    attackdetails.stundamageamount = stundamageamount;
+    //    attackDetails.damageAmount = attack1Damage;
+    //    attackDetails.position = transform.position;
+    //    attackDetails.stunDamageAmount = stunDamageAmount;
 
-    //    foreach (Collider2D collider in detectedobjects)
+    //    foreach (Collider2D collider in detectedObjects)
     //    {
-    //        collider.transform.parent.SendMessage("damage", attackdetails);
-    //        //instantiate hit particle
+    //        collider.transform.parent.SendMessage("Damage", attackDetails);
+    //        //Instantiate hit particle
     //    }
     //}
 
-    //private void finishattack1()
+    //private void FinishAttack1()
     //{
-    //    isattacking = false;
-    //    anim.SetBool("isattacking", isattacking);
+    //    isAttacking = false;
+    //    anim.SetBool("isAttacking", isAttacking);
     //    anim.SetBool("attack1", false);
     //}
 
-    //private void damage(WeaponAttackDetails attackdetails)
+    //private void Damage(AttackDetails attackDetails)
     //{
-    //    if (!pc.GetDashStatus())
+    //    if (!PC.GetDashStatus())
     //    {
     //        int direction;
 
-    //        ps.DecreaseHealth(attackdetails.damageAmount);
+    //        PS.DecreaseHealth(attackDetails.damageAmount);
 
-    //        if (attackdetails.position.x < transform.position.x)
+    //        if (attackDetails.position.x < transform.position.x)
     //        {
     //            direction = 1;
     //        }
@@ -115,13 +115,13 @@ public class PlayerCombatController : MonoBehaviour
     //            direction = -1;
     //        }
 
-    //        pc.Knockback(direction);
-    //    }
+    //        PC.Knockback(direction);
+    //    }        
     //}
 
-    //private void ondrawgizmos()
+    //private void OnDrawGizmos()
     //{
-    //    Gizmos.DrawWireSphere(attack1hitboxpos.position, attack1radius);
+    //    Gizmos.DrawWireSphere(attack1HitBoxPos.position, attack1Radius);
     //}
 
 }

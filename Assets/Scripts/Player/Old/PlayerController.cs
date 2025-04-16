@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
 
-    public int amountOfJumps = 2;
+    public int amountOfJumps = 1;
 
     public float movementSpeed = 10.0f;
     public float jumpForce = 16.0f;

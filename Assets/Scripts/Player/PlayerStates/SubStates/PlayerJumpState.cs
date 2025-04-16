@@ -1,44 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 
-public class PlayerJumpState : PlayerAbilityState
-{
-    private int amountOfJumpsLeft;
+public class PlayerJumpState : PlayerAbilityState {
+	private int amountOfJumpsLeft;
 
-    public PlayerJumpState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName)
-        : base(player, stateMachine, playerData, animBoolName)
-    {
-        amountOfJumpsLeft = playerData.amountOfJumps; // Set awal jumlah loncatan.
-    }
+	public PlayerJumpState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName) {
+		amountOfJumpsLeft = playerData.amountOfJumps;
+	}
 
-    public override void Enter()
-    {
-        base.Enter();
+	public override void Enter() {
+		base.Enter();
+		player.InputHandler.UseJumpInput();
+		Movement?.SetVelocityY(playerData.jumpVelocity);
+		isAbilityDone = true;
+		amountOfJumpsLeft--;
+		player.InAirState.SetIsJumping();
+	}
 
-        // Gunakan input lompatan dan kurangi jumlah lompatan yang tersisa
-        player.InputHandler.UseJumpInput();
-        PerformJump();
-    }
+	public bool CanJump() {
+		if (amountOfJumpsLeft > 0) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 
-    private void PerformJump()
-    {
-        if (amountOfJumpsLeft > 0)
-        { // Jika masih ada lompatan tersisa
-            Movement?.SetVelocityY(playerData.jumpVelocity); // Berikan kecepatan lompatan
-            amountOfJumpsLeft--; // Kurangi jumlah lompatan
-            player.InAirState.SetIsJumping(); // Tandai bahwa karakter sedang melompat
-            isAbilityDone = true; // Tandai selesai
-        }
-    }
+	public void ResetAmountOfJumpsLeft() => amountOfJumpsLeft = playerData.amountOfJumps;
 
-
-    public bool CanJump()
-    {
-        return amountOfJumpsLeft > 0; // Karakter bisa melompat jika masih ada lompatan tersisa.
-    }
-
-    public void ResetAmountOfJumpsLeft() => amountOfJumpsLeft = playerData.amountOfJumps;
-
-    public void DecreaseAmountOfJumpsLeft() => amountOfJumpsLeft--;
+	public void DecreaseAmountOfJumpsLeft() => amountOfJumpsLeft--;
 }
